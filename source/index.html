@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru" data-validate="html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lifetour</title>
+    <link rel="stylesheet" href="sass/style.scss" />
+    <link rel="icon" type="image/png" href="./public/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./public/favicons/favicon.svg"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="./public/favicons/apple-touch-icon.png"/>
+    <link rel="manifest" href="/site.webmanifest"/>
+  </head>
+
+  <body class="page-body">
+    <header class="page-body__header header" data-test="header">
+      <div class="header__wrapper">
+        <nav class="main-nav main-nav--opened">
+          <button
+            class="main-nav__toggle button main-nav__open-button main-nav__close-button"
+            type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Туры</a>
+              </li>
+
+              <li class="main-nav__item main-nav__item--active-catalog">
+                <a class="main-nav__link" href="#">
+                  Обучение
+                </a>
+              </li>
+
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">О нас</a>
+              </li>
+
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Отзывы</a>
+              </li>
+
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Фотографии</a>
+              </li>
+
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Контакты</a>
+              </li>
+
+            </ul>
+          </div>
+        </nav>
+
+        <a class="main-header__logo" href="#">
+            <img class="main-header__logo-image"
+              src="images/logo.svg"
+              width="142"
+              height="42"
+              alt="Логотип Lifetour"/>
+        </a>
+
+        <a class="main-header__phone" href="tel:+78000000000">8 800 000-00-00</a>
+      </div>
+    </header>
+
+    <!-- пример использования спрайта
+    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт" />
+    <svg>
+      <use href="/__spritemap#sprite-user"></use>
+    </svg>
+
+    -->
+    <!-- примеры требуемых атрибутов data-test="*" -->
+    <div data-test="header">header</div>
+
+    <div data-test="hero">hero</div>
+
+    <div data-test="tours">tours</div>
+
+    <div data-test="training">training</div>
+
+    <div data-test="about">about</div>
+
+    <div data-test="reviews">reviews</div>
+
+    <div data-test="adv">adv</div>
+
+    <div data-test="gallery">gallery</div>
+
+    <div data-test="form">form</div>
+
+    <div data-test="footer">footer</div>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
