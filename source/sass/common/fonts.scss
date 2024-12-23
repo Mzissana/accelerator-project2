@@ -1,0 +1,8 @@
+$content-font: "Roboto Condensed", arial, sans-serif;
+$accent-font: "Alumni Sans", arial, sans-serif;
+
+@include font-face("Roboto Condensed", url("../../fonts/RobotoCondensed-Light.woff2") format("woff2"), 300);
+@include font-face("Roboto Condensed", url("../../fonts/RobotoCondensed-Regular.woff2") format("woff2"), 400);
+@include font-face("Roboto Condensed", url("../../fonts/RobotoCondensed-Bold.woff2") format("woff2"), 700);
+@include font-face("Alumni Sans", url("../../fonts/AlumniSans-SemiBold.woff2") format("woff2"), 600);
+@include font-face("Alumni Sans", url("../../fonts/AlumniSans-ExtraBold.woff2") format("woff2"), 800);
