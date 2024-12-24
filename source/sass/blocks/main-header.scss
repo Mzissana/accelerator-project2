@@ -1,0 +1,27 @@
+.main-header__logo {
+  @media (min-width: $desktop-width) {
+    padding: 10px 31px;
+  }
+}
+
+.main-header__logo-image {
+  color: #ffffff;
+}
+
+.main-header__phone {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  padding: 14px 0 15px 20px;
+  margin: 0 0 0 auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}

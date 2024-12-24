@@ -1,0 +1,22 @@
+.main-nav__list {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 23px 30px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+.main-nav__toggle {
+  height: 26px;
+  width: 26px;
+  background-color: $icon-light;
+  mask-image: url("../../img/sprite/menu-icon.svg");
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
