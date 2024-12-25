@@ -1,0 +1,77 @@
+.socials__list {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.socials__item {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+  }
+}
+
+.socials__item {
+  position: relative;
+  width: 29px;
+  height: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid rgba(45, 56, 63, 0.30);
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    outline: 1px solid #2d383f;
+  }
+
+  &:active {
+    background-color: #0266c1;
+    outline: none;
+  }
+}
+
+.socials__link {
+  padding: 5px;
+}
+
+.socials__icon--vkontakte {
+  width: 16px;
+  height: 9px;
+  background-repeat: no-repeat;
+  background-color: $icon-main;
+  mask-image: url("../../img/sprite/vk-icon.svg");
+  mask-repeat: no-repeat;
+}
+
+.socials__icon--ok {
+  width: 9px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-color: $icon-main;
+  mask-image: url("../../img/sprite/ok-icon.svg");
+  mask-repeat: no-repeat;
+}
+
+.socials__icon--reddit {
+  width: 14px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-color: $icon-main;
+  mask-image: url("../../img/sprite/reddit-icon.svg");
+  mask-repeat: no-repeat;
+}
+
+.socials__button:active .socials__icon {
+  background-color: $icon-light;
+}
+
+.socials__link--disabled {
+  pointer-events: none;
+  background-color: rgba(45, 56, 63, 0.3);
+}

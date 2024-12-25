@@ -12,8 +12,22 @@
 
 @import "./common/states.scss";
 
-// blocks
+// header 
 @import "./blocks/page-body.scss";
 @import "./blocks/header.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/main-header.scss";
+
+//subscription 
+@import "./blocks/subscription.scss";
+
+
+//footer
+@import "./blocks/footer.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/contact.scss";
+@import "./blocks/location.scss";
+
+@import "./blocks/main-footer.scss";
+@import "./blocks/footer-links.scss";
+@import "./blocks/socials.scss";

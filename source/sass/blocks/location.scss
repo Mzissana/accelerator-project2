@@ -1,0 +1,31 @@
+.location__map-wrapper {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 26%;
+    width: 28px;
+    height: 28px;
+    background-image: url("/img/sprite/pin-filled-icon.svg");
+    background-size: 19px 25px;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 42px;
+      height: 42px;
+      background-size: 29px 38px;
+      top: 57%;
+      right: 43%;
+    }
+  
+    @media (min-width: $desktop-width) {
+      width: 48px;
+      height: 48px;
+      background-size: 33px 44px;
+      top: 58%;
+      right: 41%;
+    }
+  }
+}
