@@ -1,0 +1,101 @@
+.subscription__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 320px;
+  padding: 31px 31px;
+  color: $on-dark-text-color;
+  min-height: 638px;
+
+  background-image: image-set(
+    url("../../img/form-mobile@1x.webp") 1x, 
+    url("../../img/form-mobile@2x.webp") 2x, 
+    url("../../img/form-mobile@1x.jpg") 1x, 
+    url("../../img/form-mobile@2x.jpg") 2x
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+    background-color: #000000;
+    opacity: 20%;
+    top: 0;
+    left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    gap: 25px;
+    font-size: 25px;
+    line-height: 25px;
+    min-height: 680px;
+    padding: 30px 204px;
+    background-image: image-set(
+    url("../../img/form-tablet@1x.webp") 1x, 
+    url("../../img/form-tablet@2x.webp") 2x, 
+    url("../../img/form-tablet@1x.jpg") 1x, 
+    url("../../img/form-tablet@2x.jpg") 2x
+  );
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    gap: 20px;
+    font-size: 35px;
+    line-height: 35px;
+    min-height: 760px;
+    padding: 30px 240px;
+    background-image: image-set(
+    url("../../img/form-desktop@1x.webp") 1x, 
+    url("../../img/form-desktop@2x.webp") 2x, 
+    url("../../img/form-desktop@1x.jpg") 1x, 
+    url("../../img/form-desktop@2x.jpg") 2x
+  );
+  }
+}
+
+.subscription__wrapper > h2 {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 800;
+  margin: 0;
+  text-align: center;
+  z-index: 10;
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
+
+.subscription__wrapper > p {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+  z-index: 10;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 20px 0;
+  }
+}
+

@@ -12,6 +12,9 @@
 
 @import "./common/states.scss";
 
+//main
+@import "./blocks/main.scss";
+
 // header 
 @import "./blocks/page-body.scss";
 @import "./blocks/header.scss";
@@ -20,7 +23,7 @@
 
 //subscription 
 @import "./blocks/subscription.scss";
-
+@import "./blocks/subscription-form.scss";
 
 //footer
 @import "./blocks/footer.scss";
