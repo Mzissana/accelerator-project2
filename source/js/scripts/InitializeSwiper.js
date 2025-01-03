@@ -1,10 +1,14 @@
-import Swiper, { Navigation, Pagination } from 'swiper';
+// core version + navigation, pagination modules:
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
+// import Swiper and modules styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
+
 function initHeroSwiper() {
-  const swiper = new Swiper('.hero__swiper', {
+  const swiper = new Swiper('.hero-swiper', {
     modules: [Navigation, Pagination],
     slidesPerView: 1,
     spaceBetween: 30,
@@ -13,10 +17,6 @@ function initHeroSwiper() {
       el: '.hero__swiper-pagination',
       clickable: true,
     },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
@@ -24,4 +24,6 @@ function initHeroSwiper() {
   });
 }
 
-export default initializeSwiper;
+
+
+export default initHeroSwiper;
