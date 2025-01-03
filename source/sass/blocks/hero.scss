@@ -1,6 +1,207 @@
 .hero__swiper {
   position: relative;
-  overflow: hidden; /* Прячет всё, что выходит за пределы */
-  width: 100%; /* Убедитесь, что контейнер имеет нужную ширину */
-  height: 400px; /* Установите фиксированную высоту или используйте auto */
+  overflow: hidden;
+  width: 100%;
+  min-height: 568px; 
+
+  @media (min-width: $tablet-width) {
+    min-height: 1034px;
+  } 
+
+  @media (min-width: $desktop-width) {
+    min-height: 800px;
+  }
+}
+
+.hero-swiper__slide--kavkaz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 320px;
+  padding: 31px 31px;
+  color: $on-dark-text-color;
+  min-height: 638px;
+
+  background-image: image-set(
+    url("../../img/hero-kavkaz-mobile@1x.webp") 1x, 
+    url("../../img/hero-kavkaz-mobile@2x.webp") 2x, 
+    url("../../img/hero-kavkaz-mobile@1x.jpg") 1x, 
+    url("../../img/hero-kavkaz-mobile@2x.jpg") 2x
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+    background-color: #000000;
+    opacity: 20%;
+    top: 0;
+    left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    gap: 25px;
+    font-size: 25px;
+    line-height: 25px;
+    min-height: 1034px;
+    padding: 30px 204px;
+    background-image: image-set(
+    url("../../img/hero-kavkaz-tablet@1x.webp") 1x, 
+    url("../../img/hero-kavkaz-tablet@2x.webp") 2x, 
+    url("../../img/hero-kavkaz-tablet@1x.jpg") 1x, 
+    url("../../img/hero-kavkaz-tablet@2x.jpg") 2x
+  );
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    gap: 20px;
+    font-size: 35px;
+    line-height: 35px;
+    min-height: 800px;
+    padding: 30px 240px;
+    background-image: image-set(
+    url("../../img/hero-kavkaz-desktop@1x.webp") 1x, 
+    url("../../img/hero-kavkaz-desktop@2x.webp") 2x, 
+    url("../../img/hero-kavkaz-desktop@1x.jpg") 1x, 
+    url("../../img/hero-kavkaz-desktop@2x.jpg") 2x
+  );
+  }
+}
+
+.hero-swiper__slide--kamchatka {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 320px;
+  padding: 31px 31px;
+  color: $on-dark-text-color;
+  min-height: 638px;
+
+  background-image: image-set(
+    url("../../img/hero-kamchatka-mobile@1x.webp") 1x, 
+    url("../../img/hero-kamchatka-mobile@2x.webp") 2x, 
+    url("../../img/hero-kamchatka-mobile@1x.jpg") 1x, 
+    url("../../img/hero-kamchatka-mobile@2x.jpg") 2x
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+    background-color: #000000;
+    opacity: 20%;
+    top: 0;
+    left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    gap: 25px;
+    font-size: 25px;
+    line-height: 25px;
+    min-height: 1034px;
+    padding: 30px 204px;
+    background-image: image-set(
+    url("../../img/hero-kamchatka-tablet@1x.webp") 1x, 
+    url("../../img/hero-kamchatka-tablet@2x.webp") 2x, 
+    url("../../img/hero-kamchatka-tablet@1x.jpg") 1x, 
+    url("../../img/hero-kamchatka-tablet@2x.jpg") 2x
+  );
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    gap: 20px;
+    font-size: 35px;
+    line-height: 35px;
+    min-height: 800px;
+    padding: 30px 240px;
+    background-image: image-set(
+    url("../../img/hero-kamchatka-desktop@1x.webp") 1x, 
+    url("../../img/hero-kamchatka-desktop@2x.webp") 2x, 
+    url("../../img/hero-kamchatka-desktop@1x.jpg") 1x, 
+    url("../../img/hero-kamchatka-desktop@2x.jpg") 2x
+  );
+  }
+}
+
+
+.hero-swiper__slide--altay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 320px;
+  padding: 31px 31px;
+  color: $on-dark-text-color;
+  min-height: 638px;
+
+  background-image: image-set(
+    url("../../img/hero-altay-mobile@1x.webp") 1x, 
+    url("../../img/hero-altay-mobile@2x.webp") 2x, 
+    url("../../img/hero-altay-mobile@1x.jpg") 1x, 
+    url("../../img/hero-altay-mobile@2x.jpg") 2x
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+    background-color: #000000;
+    opacity: 20%;
+    top: 0;
+    left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    gap: 25px;
+    font-size: 25px;
+    line-height: 25px;
+    min-height: 1034px;
+    padding: 30px 204px;
+    background-image: image-set(
+    url("../../img/hero-altay-tablet@1x.webp") 1x, 
+    url("../../img/hero-altay-tablet@2x.webp") 2x, 
+    url("../../img/hero-altay-tablet@1x.jpg") 1x, 
+    url("../../img/hero-altay-tablet@2x.jpg") 2x
+  );
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    gap: 20px;
+    font-size: 35px;
+    line-height: 35px;
+    min-height: 800px;
+    padding: 30px 240px;
+    background-image: image-set(
+    url("../../img/hero-altay-desktop@1x.webp") 1x, 
+    url("../../img/hero-altay-desktop@2x.webp") 2x, 
+    url("../../img/hero-altay-desktop@1x.jpg") 1x, 
+    url("../../img/hero-altay-desktop@2x.jpg") 2x
+  );
+  }
 }
