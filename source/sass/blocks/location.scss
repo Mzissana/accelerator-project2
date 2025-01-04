@@ -5,19 +5,21 @@
     content: "";
     position: absolute;
     top: 50%;
-    right: 26%;
+    right: 29%;
     width: 28px;
     height: 28px;
+    translate: -1px -1px;
     background-image: url("/img/sprite/pin-filled-icon.svg");
-    background-size: 19px 25px;
+    background-size: 28px 28px;
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
       width: 42px;
       height: 42px;
-      background-size: 29px 38px;
-      top: 57%;
-      right: 43%;
+      background-size: 42px 42px;
+      top: 54%;
+      right: 44%;
+      translate: -3px -2px;
     }
   
     @media (min-width: $desktop-width) {

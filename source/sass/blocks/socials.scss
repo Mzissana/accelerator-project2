@@ -1,7 +1,15 @@
 .socials__list {
   display: flex;
   flex-direction: row;
-  gap: 16px;
+  gap: 19px;
+
+  @media (min-width: $tablet-width) {
+    gap: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 16px;
+  }
 }
 
 .socials__item {
@@ -41,7 +49,7 @@
 }
 
 .socials__icon--vkontakte {
-  width: 16px;
+  width: 17px;
   height: 9px;
   background-repeat: no-repeat;
   background-color: $icon-main;
@@ -60,7 +68,7 @@
 
 .socials__icon--reddit {
   width: 14px;
-  height: 15px;
+  height: 16px;
   background-repeat: no-repeat;
   background-color: $icon-main;
   mask-image: url("../../img/sprite/reddit-icon.svg");

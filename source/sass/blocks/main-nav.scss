@@ -1,3 +1,14 @@
+.main-nav {
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 auto;
+    padding: 0;
+  }
+}
+
 .main-nav__list {
   display: none;
 
@@ -9,12 +20,21 @@
     font-size: 16px;
     line-height: 16px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 23px 35px 23px 15px;
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 .main-nav--closed .main-nav__toggle {
   height: 26px;
   width: 26px;
+  padding: 0;
+  margin: 0;
   background-color: $icon-light;
   mask-image: url("../../img/sprite/menu-icon.svg");
+
 
   @media (min-width: $desktop-width) {
     display: none;
