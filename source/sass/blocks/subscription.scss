@@ -3,20 +3,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 17px;
   width: 320px;
-  padding: 31px 31px;
+  padding: 174px 31px 174px;
   color: $on-dark-text-color;
   min-height: 638px;
 
   background-image: image-set(
-    url("../../img/form-mobile@1x.webp") 1x, 
-    url("../../img/form-mobile@2x.webp") 2x, 
-    url("../../img/form-mobile@1x.jpg") 1x, 
-    url("../../img/form-mobile@2x.jpg") 2x
+    url("../../img/form-tablet@1x.webp") 1x, 
+    url("../../img/form-tablet@2x.webp") 2x, 
+    url("../../img/form-tablet@1x.jpg") 1x, 
+    url("../../img/form-tablet@2x.jpg") 2x
   );
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   position: relative;
 
   &::before {
@@ -33,7 +34,7 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    gap: 25px;
+    gap: 24px;
     font-size: 25px;
     line-height: 25px;
     min-height: 680px;
@@ -66,18 +67,20 @@
   font-size: 22px;
   line-height: 22px;
   font-weight: 800;
-  margin: 0;
+  margin: 3px 0 0;
   text-align: center;
   z-index: 10;
 
   @media (min-width: $tablet-width) {
     font-size: 25px;
     line-height: 25px;
+    margin: 4px 0 0;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 35px;
     line-height: 35px;
+    margin: 3px 0 0;
   }
 }
 
@@ -85,17 +88,27 @@
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
-  margin: 0;
+  margin: 0 0 3px;
   text-align: center;
   z-index: 10;
+  min-height: 54px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    min-height: fit-content;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 20px 0;
+    margin: 0 0 20px;
+    min-height: fit-content;
   }
+}
+
+.subscription__wrapper > p span {
+  @media (min-width: $tablet-width) {
+    display: none;
+  } 
 }
 

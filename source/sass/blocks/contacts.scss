@@ -9,7 +9,7 @@
   width: 320px;
   display: flex;
   flex-direction: column;
-  padding: 38px 0 19px;
+  padding: 37px 0 20px;
   justify-content: space-between;
   align-items: flex-start;
 
@@ -17,7 +17,7 @@
     min-height: auto;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 61px 0 39px;
+    padding: 60px 0 39px;
     width: 768px;
   }
 
@@ -133,6 +133,8 @@
 
     @media (min-width: $tablet-width) {
       translate: 1px -10px;
+      width: 24px;
+      height: 24px;
     }
 
   }
@@ -152,7 +154,9 @@
     transform: translateY(-50%);
 
     @media (min-width: $tablet-width) {
-      translate: 2px -10px;
+      translate: 0 -10px;
+      width: 24px;
+      height: 24px;
     }
 
   }
@@ -173,6 +177,8 @@
 
     @media (min-width: $tablet-width) {
       translate: 1px -10px;
+      width: 24px;
+      height: 24px;
     }
   }
 }
