@@ -97,22 +97,31 @@
  
 
     <main class="main">
-      <section class="main__hero hero">
+      <section class="main__hero hero" data-test="hero">
         <h1 class="visually-hidden">Lifetour организация походов в горы</h1>
         <div class="hero__swiper hero-swiper">
           <div class="swiper-wrapper hero-swiper__wrapper">
-            <div class="swiper-slide hero-swiper__slide hero-slide hero-swiper__slide--kavkaz">
+            <div class="swiper-slide hero-swiper__slide hero-slide hero-slide--kavkaz">
+              <div class="hero-slide__wrapper">
+                <div class="hero-slide__info">
               <h2>Захватывающие вершины Кавказа</h2>
-              <p>В сопровождении опытных гидов вы пройдёте ландшафты и совершите восход на вершину горы Чегет.</p>
+              <p>В сопровождении опытных гидов
+                вы пройдёте через потрясающие
+                ландшафты и совершите восход
+                на вершину горы Чегет.</p>
               <button class="hero-slide__button button-reset" type="button">Смотреть тур</button>
 
               <div class="hero-slide__features">
                 <p class="hero-slide__feature--nights">6 дней/5 ночей</p>
                 <p class="hero-slide__feature--difficulty">Высокая сложность</p>
               </div>
+              </div>
+            </div>
             </div>
 
-            <div class="swiper-slide hero-swiper__slide hero-slide hero-swiper__slide--kamchatka">
+            <div class="swiper-slide hero-swiper__slide hero-slide hero-slide--kamchatka">
+              <div class="hero-slide__wrapper">
+                <div class="hero-slide__info">
               <h2>Невероятная природа Камчатки</h2>
               <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
               <button class="hero-slide__button button-reset" type="button">Смотреть тур</button>
@@ -122,8 +131,12 @@
                 <p class="hero-slide__feature--difficulty">Средняя сложность</p>
               </div>
             </div>
+          </div>
+            </div>
 
-            <div class="swiper-slide hero-swiper__slide hero-slide hero-swiper__slide--altay">
+            <div class="swiper-slide hero-swiper__slide hero-slide hero-slide--altay">
+              <div class="hero-slide__wrapper">
+                <div class="hero-slide__info">
               <h2>Магические пейзажи Алтайского Края</h2>
               <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
               <button class="hero-slide__button button-reset" type="button">Смотреть тур</button>
@@ -132,9 +145,9 @@
                 <p class="hero-slide__feature--nights">8 дней/7 ночей</p>
                 <p class="hero-slide__feature--difficulty">Лёгкая сложность</p>
               </div>
-
             </div>
-
+            </div>
+          </div>
           </div>
           <div class="hero__swiper-pagination swiper-pagination"></div>
 
@@ -319,7 +332,6 @@
 </html>
 
 
-<div data-test="hero">hero</div>
 
 <div data-test="tours">tours</div>
 
