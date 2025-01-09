@@ -1,14 +1,4 @@
-.subscription__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 17px;
-  width: 320px;
-  padding: 174px 31px 174px;
-  color: $on-dark-text-color;
-  min-height: 638px;
-
+.subscription {
   background-image: image-set(
     url("../../img/form-tablet@1x.webp") 1x, 
     url("../../img/form-tablet@2x.webp") 2x, 
@@ -19,6 +9,17 @@
   background-size: cover;
   background-position: center;
   position: relative;
+}
+.subscription__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  width: 320px;
+  padding: 174px 31px 174px;
+  margin-top: 3px;
+  color: $on-dark-text-color;
 
   &::before {
     content: "";
@@ -39,6 +40,7 @@
     line-height: 25px;
     min-height: 680px;
     padding: 30px 204px;
+    margin-top: 0;
     background-image: image-set(
     url("../../img/form-tablet@1x.webp") 1x, 
     url("../../img/form-tablet@2x.webp") 2x, 
@@ -54,6 +56,7 @@
     line-height: 35px;
     min-height: 760px;
     padding: 30px 240px;
+    margin-top: 0;
     background-image: image-set(
     url("../../img/form-desktop@1x.webp") 1x, 
     url("../../img/form-desktop@2x.webp") 2x, 
@@ -67,7 +70,7 @@
   font-size: 22px;
   line-height: 22px;
   font-weight: 800;
-  margin: 3px 0 0;
+  margin: 0;
   text-align: center;
   z-index: 10;
 
@@ -90,7 +93,6 @@
   font-weight: 400;
   margin: 0 0 3px;
   text-align: center;
-  z-index: 10;
   min-height: 54px;
 
   @media (min-width: $tablet-width) {

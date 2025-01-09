@@ -21,12 +21,15 @@
   border: none;
   outline: 1px solid rgba(2, 102, 193, 0.1);
   width: 100%;
-  height: 50px;
   background-color: #ffffff;
-  padding: 17px 0 17px 15px;
+  padding: 15px;
+  min-height: 50px;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     height: 55px;
@@ -44,11 +47,11 @@
 
 .subscription-form__button {
   background-color: #0266c1;
-  padding: 21px;
+  padding: 21px 20px 21px 19px;
   height: 58px;
   width: 100%;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 16px;
 
   @media (min-width: $tablet-width) {
