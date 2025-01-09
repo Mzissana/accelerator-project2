@@ -8,6 +8,7 @@ import 'swiper/css/pagination';
 
 
 function initHeroSwiper() {
+  const isDesktop = window.matchMedia('(min-width: 1440px)').matches;
   const swiper = new Swiper('.hero-swiper', {
     modules: [Navigation, Pagination],
     slidesPerView: 1,
@@ -21,6 +22,13 @@ function initHeroSwiper() {
       delay: 3000,
       disableOnInteraction: false,
     },
+    simulateTouch: !isDesktop, 
+  });
+
+  window.addEventListener('resize', () => {
+    const isDesktopNow = window.matchMedia('(min-width: 1440px)').matches;
+    swiper.params.simulateTouch = !isDesktopNow;
+    swiper.update();
   });
 }
 

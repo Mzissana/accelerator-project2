@@ -15,6 +15,17 @@
 
 .hero__swiper-pagination {
   --swiper-pagination-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    position: absolute; 
+    --swiper-pagination-bottom: 92px;
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 120px 0 0;
+
+  }
 }
 
 .hero__swiper-pagination .swiper-pagination-bullet-active {
@@ -38,5 +49,6 @@
     font-size: 77px;
     line-height: 77px;
     text-align: left;
+    --swiper-pagination-bullet-horizontal-gap: 10px;
   }
 }

@@ -15,18 +15,21 @@
 //main
 @import "./blocks/main.scss";
 
-//hero 
-@import "./blocks/hero.scss";
-@import "./blocks/hero-swiper.scss";
-@import "./blocks/hero-slide.scss";
-
 // header 
 @import "./blocks/page-body.scss";
 @import "./blocks/header.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/main-header.scss";
 
-//subscription 
+//hero 
+@import "./blocks/hero.scss";
+@import "./blocks/hero-swiper.scss";
+@import "./blocks/hero-slide.scss";
+
+//gallery
+@import "./blocks/gallery.scss";
+
+//form 
 @import "./blocks/subscription.scss";
 @import "./blocks/subscription-form.scss";
 

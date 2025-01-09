@@ -3,7 +3,7 @@
 import form from './scripts/InitializeForm';
 
 //slider
-import initHeroSwiper from './scripts/InitializeSwiper';
+import initHeroSwiper from './scripts/InitializeHeroSwiper';
 document.addEventListener('DOMContentLoaded', initHeroSwiper);
 
 //menu

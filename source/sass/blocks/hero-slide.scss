@@ -1,3 +1,16 @@
+.hero-slide {
+  gap: 20px; 
+  
+  @media (min-width: $tablet-width) {
+    gap: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 20px;
+    min-height: 800px;
+  }
+}
+
 .hero-slide__wrapper {
   display: flex;
   flex-direction: column;
@@ -11,11 +24,18 @@
     padding: 30px 45px;
     min-height: 934px;
   }
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 92px 120px;
+    min-height: 800px;
+  }
   
 }
 
-.hero-slide__info {
-  width: 320px;
+.hero-slide__info { 
+  width: 290px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,7 +48,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
+    width: 780px;
+    align-items: flex-start;
+    gap: 25px;
   }
 }
 
@@ -51,7 +73,7 @@
   }
 }
 
-.hero-slide__info p {
+.hero-slide__info > p {
   font-size: 15px;
   line-height: 20px;
   text-align: center;
@@ -66,6 +88,8 @@
 
   @media (min-width: $desktop-width) {
     text-align: left;
+    max-width: 420px;
+    margin: 0 0 10px;
   }
 }
 
@@ -81,20 +105,11 @@
   padding: 20px;
 }
 
-.hero-slide__features {
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    display: block;
-  }
-}
-
 .hero-slide--kavkaz {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
   color: $on-dark-text-color;
   min-height: 638px;
   z-index: 1;
@@ -124,7 +139,6 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    gap: 25px;
     font-size: 25px;
     line-height: 25px;
     min-height: 1034px;
@@ -138,7 +152,6 @@
 
   @media (min-width: $desktop-width) {
     width: 1440px;
-    gap: 20px;
     font-size: 35px;
     line-height: 35px;
     min-height: 800px;
@@ -156,7 +169,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
   color: $on-dark-text-color;
   min-height: 638px;
   z-index: 1;
@@ -186,11 +198,9 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    gap: 25px;
     font-size: 25px;
     line-height: 25px;
     min-height: 1034px;
-    padding: 30px 204px;
     background-image: image-set(
     url("../../img/hero-kamchatka-tablet@1x.webp") 1x, 
     url("../../img/hero-kamchatka-tablet@2x.webp") 2x, 
@@ -201,11 +211,9 @@
 
   @media (min-width: $desktop-width) {
     width: 1440px;
-    gap: 20px;
     font-size: 35px;
     line-height: 35px;
     min-height: 800px;
-    padding: 30px 240px;
     background-image: image-set(
     url("../../img/hero-kamchatka-desktop@1x.webp") 1x, 
     url("../../img/hero-kamchatka-desktop@2x.webp") 2x, 
@@ -221,8 +229,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  padding: 31px 31px;
   color: $on-dark-text-color;
   min-height: 638px;
   z-index: 1;
@@ -252,11 +258,9 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    gap: 25px;
     font-size: 25px;
     line-height: 25px;
     min-height: 1034px;
-    padding: 30px 204px;
     background-image: image-set(
     url("../../img/hero-altay-tablet@1x.webp") 1x, 
     url("../../img/hero-altay-tablet@2x.webp") 2x, 
@@ -267,16 +271,62 @@
 
   @media (min-width: $desktop-width) {
     width: 1440px;
-    gap: 20px;
     font-size: 35px;
     line-height: 35px;
     min-height: 800px;
-    padding: 30px 240px;
     background-image: image-set(
     url("../../img/hero-altay-desktop@1x.webp") 1x, 
     url("../../img/hero-altay-desktop@2x.webp") 2x, 
     url("../../img/hero-altay-desktop@1x.jpg") 1x, 
     url("../../img/hero-altay-desktop@2x.jpg") 2x
   );
+  }
+}
+
+
+.hero-slide__features {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 99px;
+  }
+}
+
+.hero-slide__feature {
+  outline: 2px solid rgb(255, 255, 255, 0.5);
+  padding: 14px 20px 14px 40px;          
+  display: inline-block;
+  font-size: 12px;
+  line-height: 16px;
+  position: relative;
+  margin: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    top: 50%;
+    left: 20px;
+    translate: 0 -6px;
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+  }
+}
+
+.hero-slide__feature--nights {
+  &::before {
+  mask-image: url("/__spritemap#sprite-moon-icon-view");
+  }
+}
+
+
+.hero-slide__feature--difficulty {
+  &::before {
+  mask-image: url("/__spritemap#sprite-level-icon-view");
   }
 }
