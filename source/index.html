@@ -154,6 +154,121 @@
         </div>
       </section>
 
+      <section class="main__about about" data-test="about">
+        <div class="about__wrapper">
+          <div class="about__image-wrapper">
+          <picture>
+            <source
+            width="660"
+            height="498"
+              type="image/webp"
+              media="(min-width: 1440px)"
+              srcset="
+                img/about-desktop@1x.webp 1x,
+                img/about-desktop@2x.webp 2x
+              "
+            />
+            <source
+            width="542"
+            height="350"
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="img/about-tablet@1x.webp 1x, img/about-tablet@2x.webp 2x"
+            />
+            <source
+            width="320"
+            height="400"
+              type="image/webp"
+              srcset="img/about-mobile@1x.webp 1x, img/about-mobile@2x.webp 2x"
+            />
+            <source
+              width="660"
+              height="498"
+              type="image/png"
+              media="(min-width: 1440px)"
+              srcset="img/about-desktop@1x.png 1x, img/about-desktop@2x.png 2x"
+            />
+            <source
+              width="542"
+              height="350"
+              type="image/png"
+              media="(min-width: 768px)"
+              srcset="img/about-tablet@1x.png 1x, img/about-tablet@2x.png 2x"
+            />
+            <img
+              class="about__image "
+              src="img/about-mobile@1x.png"
+              srcset="img/about-mobile@2x.png 2x"
+              alt="Группа туристов в горах"
+              width="320"
+              height="400"
+            />
+          </picture>
+        </div>
+          <div class="about__info">
+            <h2>О нас</h2>
+            <div>
+              <h3>История компании</h3>
+              <p>В далёком 2000 году мы начали заниматься туризмом — походы, поездки, восхождения, нам это настолько понравилось, что мы этим стали жить. Спустя 5 лет, в 2005 году мы основали компанию, чтобы показывать людям удивительные места нашей страны.</p>
+            </div> 
+            <div>
+              <h3>Наша цель</h3>
+              <p>Подарить вам незабываемые впечатления от похода в горы. Мы берём на себя все организационные вопросы. При организации мы обязательно учтём все ваши пожелания. Вам останется только наслаждаться незабываемым приключением в приятной компании.</p>
+            </div> 
+          </div>
+          
+        </div>
+      </section>
+
+      <section class="main__advantages advantages" data-test="adv">
+        <div class="advantages__wrapper">
+          <h2>Преимущества</h2>
+          <div class="advantages__swiper advantages-swiper">
+          <div class="advantages__list swiper-wrapper">
+            <div class="advantages__item advantage swiper-slide advantages-swiper__slide advantages-slide">
+              <div class="advantage__wrapper advantage__wrapper--safety">
+                <h3>Безопасность</h3>
+                <p>Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем планы действий на случай непредвиденных обстоятельств и даём гарантию полной безопасности во время всего тура.</p>
+              </div>
+            </div>
+
+            <div class="advantages__item advantage swiper-slide advantages-swiper__slide advantages-slide">
+              <div class="advantage__wrapper advantage__wrapper--knowledge">
+                <h3>Экспертиза и знания</h3>
+                <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности. Это гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом без опасений.</p>
+              </div>
+            </div>
+
+            <div class="advantages__item advantage swiper-slide advantages-swiper__slide advantages-slide">
+              <div class="advantage__wrapper advantage__wrapper--equipment">
+                <h3>Оборудование и снаряжение</h3>
+                <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным и экономически выгодным.</p>
+              </div>
+            </div>
+
+            <div class="advantages__item advantage swiper-slide advantages-swiper__slide advantages-slide">
+              <div class="advantage__wrapper advantage__wrapper--route">
+                <h3>Индивидуальные маршруты</h3>
+                <p>Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и интересам. Мы также можем адаптировать маршруты к вашим конкретным потребностям и предпочтениям, чтобы вы получили индивидуальный опыт.</p>
+              </div>
+            </div>
+
+            <div class="advantages__item advantage swiper-slide advantages-swiper__slide advantages-slide">
+              <div class="advantage__wrapper advantage__wrapper--nature">
+                <h3>Бережное отношение к природе</h3>
+                <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="advantages-swiper__buttons">
+          <div class="advantages-swiper__button advantages-swiper__button--prev swiper-button-prev"></div>
+        <div class="advantages-swiper__button advantages-swiper__button--next swiper-button-next"></div>
+        </div>
+        </div>
+      </section>
+
       <section class="main__gallery gallery" data-test="gallery">
         <div class="gallery__wrapper">
 
@@ -161,18 +276,308 @@
             <h2>Фотогалерея</h2>
             <p>Добавляйте фото с хэштегом #лайфтур, а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
           </div>
-
+          
           <div class="gallery__swiper gallery-swiper">
             <div class="swiper-wrapper gallery-swiper__wrapper">
   
               <div class="swiper-slide gallery-swiper__slide gallery-slide">
                 <div class="gallery-slide__wrapper">
-                 
+                  <picture>
+                    <source
+                      width="284"
+                      height="463"
+                      type="image/webp"
+                      media="(min-width: 1440px)"
+                      srcset="
+                        img/gallery-1@1x.webp 1x,
+                        img/gallery-1@2x.webp 2x
+                      "
+                    />
+                    <source
+                      width="253"
+                      height="418"
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="img/gallery-1@1x.webp 1x, img/gallery-1@2x.webp 2x"
+                    />
+                    <source
+                      width="158"
+                      height="266"
+                      type="image/webp"
+                      srcset="img/gallery-1@1x.webp 1x, img/gallery-1@2x.webp 2x"
+                    />
+                    <source
+                      width="284"
+                      height="463"
+                      type="image/jpg"
+                      media="(min-width: 1440px)"
+                      srcset="img/gallery-1@1x.jpg 1x, img/gallery-1@2x.jpg 2x"
+                    />
+                    <source
+                      width="253"
+                      height="418"
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                      srcset="img/gallery-1@1x.jpg 1x, img/gallery-1@2x.jpg 2x"
+                    />
+                    <img
+                      class="gallery-slide__image gallery-slide__image--big"
+                      src="img/gallery-1@1x.jpg"
+                      srcset="img/gallery-1@2x.jpg 2x"
+                      alt="Мужчина в горах"
+                      width="158"
+                      height="266"
+                    />
+                  </picture>
                 </div>
               </div>
 
-            <div class="gallery__swiper-pagination swiper-pagination"></div>
+              <div class="swiper-slide gallery-swiper__slide gallery-slide">
+                <div class="gallery-slide__wrapper">
+                  <picture>
+                    <source
+                      width="319"
+                      height="233"
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="img/gallery-2@1x.webp 1x, img/gallery-2@2x.webp 2x"
+                    />
+                    <source
+                      width="157"
+                      height="149"
+                      type="image/webp"
+                      srcset="img/gallery-2@1x.webp 1x, img/gallery-2@2x.webp 2x"
+                    />
+                    <source
+                      width="319"
+                      height="233"
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                      srcset="img/gallery-2@1x.jpg 1x, img/gallery-2@2x.jpg 2x"
+                    />
+                    <img
+                      class="gallery-slide__image"
+                      src="img/gallery-2@1x.jpg"
+                      srcset="img/gallery-2@2x.jpg 2x"
+                      alt="Мужчина в горах"
+                      width="157"
+                      height="149"
+                    />
+                  </picture>
+
+                      <picture>
+                        <source
+                          width="319"
+                          height="233"
+                          type="image/webp"
+                          media="(min-width: 768px)"
+                          srcset="img/gallery-3@1x.webp 1x, img/gallery-3@2x.webp 2x"
+                        />
+                        <source
+                          width="157"
+                          height="149"
+                          type="image/webp"
+                          srcset="img/gallery-3@1x.webp 1x, img/gallery-3@2x.webp 2x"
+                        />
+                        <source
+                          width="319"
+                          height="233"
+                          type="image/jpg"
+                          media="(min-width: 768px)"
+                          srcset="img/gallery-3@1x.jpg 1x, img/gallery-3@2x.jpg 2x"
+                        />
+                        <img
+                          class="gallery-slide__image"
+                          src="img/gallery-3@1x.jpg"
+                          srcset="img/gallery-3@2x.jpg 2x"
+                          alt="Компас в руках на фоне горного пейзажа"
+                          width="157"
+                          height="149"
+                        />
+                      </picture>
+               
+                </div>
+              </div>
+
+              <div class="swiper-slide gallery-swiper__slide gallery-slide">
+                <div class="gallery-slide__wrapper">
+                  <picture>
+                    <source
+                      width="284"
+                      height="463"
+                      type="image/webp"
+                      media="(min-width: 1440px)"
+                      srcset="
+                        img/gallery-4@1x.webp 1x,
+                        img/gallery-4@2x.webp 2x
+                      "
+                    />
+                    <source
+                      width="253"
+                      height="418"
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="img/gallery-4@1x.webp 1x, img/gallery-4@2x.webp 2x"
+                    />
+                    <source
+                      width="158"
+                      height="266"
+                      type="image/webp"
+                      srcset="img/gallery-4@1x.webp 1x, img/gallery-4@2x.webp 2x"
+                    />
+                    <source
+                      width="284"
+                      height="463"
+                      type="image/jpg"
+                      media="(min-width: 1440px)"
+                      srcset="img/gallery-4@1x.jpg 1x, img/gallery-4@2x.jpg 2x"
+                    />
+                    <source
+                      width="253"
+                      height="418"
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                      srcset="img/gallery-4@1x.jpg 1x, img/gallery-4@2x.jpg 2x"
+                    />
+                    <img
+                      class="gallery-slide__image gallery-slide__image--big"
+                      src="img/gallery-4@1x.jpg"
+                      srcset="img/gallery-4@2x.jpg 2x"
+                      alt="Группа туристов спускается по тропе в горах"
+                      width="158"
+                      height="266"
+                    />
+                  </picture>
+                </div>
+              </div>
+
+              <div class="swiper-slide gallery-swiper__slide gallery-slide">
+                <div class="gallery-slide__wrapper">
+                  <picture>
+                    <source
+                      width="319"
+                      height="233"
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="img/gallery-5@1x.webp 1x, img/gallery-5@2x.webp 2x"
+                    />
+                    <source
+                      width="157"
+                      height="149"
+                      type="image/webp"
+                      srcset="img/gallery-5@1x.webp 1x, img/gallery-5@2x.webp 2x"
+                    />
+                    <source
+                      width="319"
+                      height="233"
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                      srcset="img/gallery-5@1x.jpg 1x, img/gallery-5@2x.jpg 2x"
+                    />
+                    <img
+                      class="gallery-slide__image"
+                      src="img/gallery-5@1x.jpg"
+                      srcset="img/gallery-5@2x.jpg 2x"
+                      alt="Группа туристов идут вдоль горной реки"
+                      width="157"
+                      height="149"
+                    />
+                  </picture>
+
+                  <picture>
+                    <source
+                      width="319"
+                      height="233"
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="img/gallery-6@1x.webp 1x, img/gallery-6@2x.webp 2x"
+                    />
+                    <source
+                      width="157"
+                      height="110"
+                      type="image/webp"
+                      srcset="img/gallery-6@1x.webp 1x, img/gallery-6@2x.webp 2x"
+                    />
+                    <source
+                      width="319"
+                      height="233"
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                      srcset="img/gallery-6@1x.jpg 1x, img/gallery-6@2x.jpg 2x"
+                    />
+                    <img
+                      class="gallery-slide__image"
+                      src="img/gallery-6@1x.jpg"
+                      srcset="img/gallery-6@2x.jpg 2x"
+                      alt="Палатка ночью на природе"
+                      width="157"
+                      height="110"
+                    />
+                  </picture>
+
+                </div>
+              </div>
+
+              
+              <div class="swiper-slide gallery-swiper__slide gallery-slide">
+                <div class="gallery-slide__wrapper">
+                  <picture>
+                    <source
+                      width="284"
+                      height="463"
+                      type="image/webp"
+                      media="(min-width: 1440px)"
+                      srcset="
+                        img/gallery-7@1x.webp 1x,
+                        img/gallery-7@2x.webp 2x
+                      "
+                    />
+                    <source
+                      width="253"
+                      height="418"
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="img/gallery-7@1x.webp 1x, img/gallery-7@2x.webp 2x"
+                    />
+                    <source
+                      width="158"
+                      height="266"
+                      type="image/webp"
+                      srcset="img/gallery-7@1x.webp 1x, img/gallery-7@2x.webp 2x"
+                    />
+                    <source
+                      width="284"
+                      height="463"
+                      type="image/jpg"
+                      media="(min-width: 1440px)"
+                      srcset="img/gallery-7@1x.jpg 1x, img/gallery-7@2x.jpg 2x"
+                    />
+                    <source
+                      width="253"
+                      height="418"
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                      srcset="img/gallery-7@1x.jpg 1x, img/gallery-7@2x.jpg 2x"
+                    />
+                    <img
+                      class="gallery-slide__image gallery-slide__image--big"
+                      src="img/gallery-7@1x.jpg"
+                      srcset="img/gallery-7@2x.jpg 2x"
+                      alt="Двое мужчин в лесу"
+                      width="158"
+                      height="266"
+                    />
+                  </picture>
+                </div>
+              </div>
+              
             </div>
+            
+            
+          </div>
+          <div class="gallery-swiper__buttons">
+            <div class="gallery-swiper__button gallery-swiper__button--prev swiper-button-prev"></div>
+          <div class="gallery-swiper__button gallery-swiper__button--next swiper-button-next"></div>
           </div>
         </div>
 
@@ -362,8 +767,5 @@
 
 <div data-test="training">training</div>
 
-<div data-test="about">about</div>
-
 <div data-test="reviews">reviews</div>
 
-<div data-test="adv">adv</div>

@@ -1,0 +1,118 @@
+.about__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    padding: 60px 48px 40px 0;
+    overflow: hidden; 
+    justify-content: center;
+    align-items: center;
+  } 
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 120px 100px 0;
+    align-items: flex-start;
+    justify-content: flex-end;
+  } 
+}
+
+.about__info {
+  padding: 16px 15px 20px;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  gap: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    gap: 30px;
+    width: 270px;
+  } 
+
+  @media (min-width: $desktop-width) {
+    gap: 27px;
+    width: 660px;
+  } 
+}
+
+
+.about__wrapper h2 {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 800;
+  color: $main-text-color;
+  margin: 0 0 17px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+    line-height: 25px;
+    margin: 0 0 21px;
+  } 
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+    line-height: 35px;
+    margin: 0 0 32px;
+  }
+}
+.about__info h3 {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $main-text-color;
+  margin: 0 0 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+    max-width: 420px;
+  } 
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    line-height: 21px;
+    max-width: 660px;
+    margin: 0 0 20px;
+  }
+}
+
+.about__info p {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $main-text-color;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 420px;
+  } 
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 592px;
+  }
+}
+
+.about__image {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    object-fit: cover;
+    object-position: left; 
+  } 
+
+  @media (min-width: $desktop-width) {
+  }
+
+  
+}
+
+.about__image-wrapper {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    flex: 1 1 auto;
+    overflow: hidden; 
+  } 
+  
+}

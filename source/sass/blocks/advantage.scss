@@ -1,0 +1,91 @@
+.advantage {
+  padding: 82px 10px 20px;
+  outline: 1px solid rgba(2, 102, 193, 0.102);
+  position: relative;
+  
+  @media (min-width: $tablet-width) {
+    padding: 103px 20px 30px;
+  } 
+  @media (min-width: $desktop-width) {
+    padding: 124px 20px 40px;
+  } 
+}
+
+.advantage__wrapper {
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #0266c1;
+    top: 29px;
+    left: 50%;
+    translate: -12px 0;
+    width: 24px;
+    height: 24px;
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    
+
+    @media (min-width: $tablet-width) {
+      top: 30px;
+      width: 48px;
+      height: 48px;
+      translate: -24px 0;
+      
+    } 
+    @media (min-width: $desktop-width) {
+      top: 40px;
+      width: 54px;
+      height: 54px;
+      translate: -27px 0;
+    } 
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    translate: -21px 0;
+    width: 42px;
+    height: 42px;
+    outline: 1px solid #0266c1;
+    
+
+    @media (min-width: $tablet-width) {
+      top: 30px;
+      width: 48px;
+      height: 48px;
+      translate: -24px 0;
+      
+    } 
+    @media (min-width: $desktop-width) {
+      top: 40px;
+      width: 54px;
+      height: 54px;
+      translate: -27px 0;
+    } 
+
+   
+  }
+}
+
+.advantage__wrapper--safety::before {
+  mask-image: url("/__spritemap#sprite-security-icon-view");
+}
+
+.advantage__wrapper--knowledge::before {
+  mask-image: url("/__spritemap#sprite-crown-icon-view");
+}
+
+.advantage__wrapper--equipment::before {
+  mask-image: url("/__spritemap#sprite-boots-icon-view");
+}
+
+.advantage__wrapper--route::before {
+  mask-image: url("/__spritemap#sprite-path-icon-view");
+}
+
+.advantage__wrapper--nature::before {
+  mask-image: url("/__spritemap#sprite-leaf-icon-view");
+}

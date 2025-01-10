@@ -1,0 +1,161 @@
+.advantages__wrapper {
+  padding: 16px 15px 20px;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    gap: 30px;
+    width: 768px;
+  } 
+
+  @media (min-width: $desktop-width) {
+    gap: 0;
+    padding: 135px 0 100px;
+    width: 100%;
+  overflow: hidden;
+  } 
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  } 
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    flex-direction: initial;
+    gap: 0;
+    padding: 50px 0;
+    flex-wrap: nowrap;
+  } 
+}
+
+
+
+.advantages h2 {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 800;
+  color: $main-text-color;
+  margin: 0 0 37px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+    line-height: 25px;
+    margin: 0 0 60px;
+  } 
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+    line-height: 35px;
+    margin: 0 0 50px;
+  }
+}
+
+.advantages h3 {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  color: $main-text-color;
+  margin: 0 0 15px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    max-width: 284px;
+  } 
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 18px;
+    max-width: 340px;
+  }
+}
+
+.advantages p {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $main-text-color;
+  margin: 0;
+  max-width: 270px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 420px;
+  } 
+
+  @media (min-width: $desktop-width) {
+    font-size: 14px;
+    line-height: 24px;
+    max-width: 592px;
+  }
+}
+
+
+
+@media (max-width: 1439px) {
+  .advantages__swiper {
+    overflow: visible; 
+  }
+}
+
+.advantages__swiper {
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    overflow: visible;
+    padding: 0 120px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+.advantages__swiper .swiper-wrapper {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    flex: 0 0 auto; /* Управляется через Swiper */
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: initial;
+
+  }
+}
+
+.advantages__list .swiper-slide {
+  width: 290px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 324px;
+  } 
+
+  @media (min-width: $desktop-width) {
+    flex: 0 0 auto; /* Управляется через Swiper */
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 329px;
+  }
+ 
+}
+

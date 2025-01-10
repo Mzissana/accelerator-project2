@@ -1,0 +1,65 @@
+.advantages .advantages-swiper__buttons {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    gap: 5px;
+    position: absolute;
+    justify-content: space-between;
+    bottom: 100px;
+    right: 50%;
+    translate: 36px;
+    z-index: 100;
+  } 
+  
+}
+
+.advantages .advantages-swiper__button {
+  background-color: #0266c1;
+  color: #FFFFFF;
+  width: 37px;
+  height: 35px;
+  left: 4px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.advantages .advantages-swiper__button--next {
+  width: 37px;
+  height: 35px;
+  position: relative;
+
+  &::after {
+  content: "";
+  width: 13px;
+  height: 9px;
+  transform: rotate(180deg);
+  mask-image: url("/__spritemap#sprite-long-arrow-icon-view");
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  z-index: 10;
+  position: absolute;
+}
+}
+
+
+
+.advantages .advantages-swiper__button--prev {
+  width: 37px;
+  height: 35px;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 13px;
+    height: 9px;
+    mask-image: url("/__spritemap#sprite-long-arrow-icon-view");
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    z-index: 10;
+    position: absolute;
+  }
+}
