@@ -131,7 +131,7 @@
   width: 100%;
 
   @media (min-width: $desktop-width) {
-    flex: 0 0 auto; /* Управляется через Swiper */
+    flex: 0 0 auto; 
     width: 100%;
     flex-wrap: nowrap;
     justify-content: initial;
@@ -149,7 +149,7 @@
   } 
 
   @media (min-width: $desktop-width) {
-    flex: 0 0 auto; /* Управляется через Swiper */
+    flex: 0 0 auto;
     width: 380px;
     display: flex;
     flex-direction: column;

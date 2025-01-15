@@ -19,8 +19,8 @@ function initAdvantagesSwiper() {
         initialSlide: 2,
         loop: true,
         navigation: {
-          nextEl: ".advantages-swiper__button--next",
-          prevEl: ".advantages-swiper__button--prev",
+          nextEl: ".reviews-swiper__button--next",
+          prevEl: ".reviews-swiper__button--prev",
         },
         autoplay: {
           delay: 3000,

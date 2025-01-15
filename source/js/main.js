@@ -13,6 +13,8 @@ document.addEventListener('DOMContentLoaded', initGallerySwiper);
 import initAdvantagesSwiper from './scripts/InitializeAdvantagesSwiper';
 document.addEventListener('DOMContentLoaded', initAdvantagesSwiper);
 
+import initReviewsSwiper from './scripts/InitializeReviewsSwiper';
+document.addEventListener('DOMContentLoaded', initReviewsSwiper);
 
 //menu
 

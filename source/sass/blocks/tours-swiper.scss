@@ -1,0 +1,118 @@
+.tours-swiper__wrapper .tours-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  color: $on-dark-text-color;
+  min-height: 416px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+    background-image: linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%);
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    font-size: 25px;
+    line-height: 25px;
+    min-height: 1034px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    font-size: 35px;
+    line-height: 35px;
+    min-height: 800px;
+  }
+}
+
+
+
+.tours__swiper {
+  position: relative;
+  overflow: hidden;
+  width: 100%; 
+}
+
+.tours__wrapper {
+  position: relative;
+}
+
+.tours .tours-swiper__buttons {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    gap: 5px;
+    position: absolute;
+    justify-content: space-between;
+    top: 25%;
+    right: 45px;
+  } 
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  } 
+  
+}
+
+.tours .tours-swiper__button {
+  background-color: #0266c1;
+  color: #FFFFFF;
+  width: 37px;
+  height: 35px;
+  left: 4px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.tours .tours-swiper__button--next {
+  width: 37px;
+  height: 35px;
+  position: relative;
+
+  &::after {
+  content: "";
+  width: 13px;
+  height: 9px;
+  transform: rotate(180deg);
+  mask-image: url("/__spritemap#sprite-long-arrow-icon-view");
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  z-index: 10;
+  position: absolute;
+}
+}
+
+
+
+.tours .tours-swiper__button--prev {
+  width: 37px;
+  height: 35px;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 13px;
+    height: 9px;
+    mask-image: url("/__spritemap#sprite-long-arrow-icon-view");
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    z-index: 10;
+    position: absolute;
+  }
+}
+

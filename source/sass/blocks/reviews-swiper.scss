@@ -1,0 +1,12 @@
+.reviews-swiper {
+  width: 320px; /* Ограничьте контейнер */
+  overflow: visible; /* Скрывает лишние элементы */
+
+  @media (min-width: $tablet-width) {
+    width: 565px;
+  } 
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+  }
+}
