@@ -149,8 +149,8 @@
   } 
 
   @media (min-width: $desktop-width) {
-    flex: 0 0 auto;
-    width: 380px;
+    flex: 0 0 auto; 
+    max-width: 380px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
