@@ -16,6 +16,10 @@ document.addEventListener('DOMContentLoaded', initAdvantagesSwiper);
 import initReviewsSwiper from './scripts/InitializeReviewsSwiper';
 document.addEventListener('DOMContentLoaded', initReviewsSwiper);
 
+
+import initToursSwiper from './scripts/InitializeToursSwiper';
+document.addEventListener('DOMContentLoaded', initToursSwiper);
+
 //menu
 
 import initMenu from './scripts/InitializeMenu';

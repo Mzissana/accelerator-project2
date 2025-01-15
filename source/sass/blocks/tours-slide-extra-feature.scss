@@ -1,3 +1,61 @@
+.tours-slide-extra-feature {
+  margin: 0;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
 .tours-slide-extra-feature__value {
   margin: 0;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 13px;
 }
+
+.tours-slide-extra-feature--difficulty .tours-slide-extra-feature__value {
+  position: relative;
+  width: 84px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    height: 16px;
+    width: 84px;
+    background-size: 16px 84px;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+  }
+}
+
+
+.tours-slide--manaraga .tours-slide-extra-feature--difficulty .tours-slide-extra-feature__value {
+ &::after {
+  mask-image: url(/__spritemap#sprite-5stars-icon-view);
+ }
+}
+
+.tours-slide--elbrus .tours-slide-extra-feature--difficulty .tours-slide-extra-feature__value {
+  &::after {
+   mask-image: url(/__spritemap#sprite-4stars-icon-view);
+   mask-repeat: no-repeat;
+  }
+ }
+
+
+.tours-slide--belukha .tours-slide-extra-feature--difficulty .tours-slide-extra-feature__value {
+  &::after {
+   mask-image: url(/__spritemap#sprite-4stars-icon-view);
+  }
+ }
+
+ .tours-slide--fisht .tours-slide-extra-feature--difficulty .tours-slide-extra-feature__value {
+  &::after {
+   mask-image: url(/__spritemap#sprite-4stars-icon-view);
+  }
+ }
+
