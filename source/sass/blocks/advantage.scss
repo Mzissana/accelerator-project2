@@ -12,7 +12,6 @@
 }
 
 .advantage__wrapper {
-
   &::before {
     content: "";
     position: absolute;
@@ -23,21 +22,22 @@
     width: 24px;
     height: 24px;
     mask-repeat: no-repeat;
-    mask-size: cover;
+    mask-size: 24px 24px;
+    
     
 
     @media (min-width: $tablet-width) {
-      top: 30px;
+      top: 41px;
       width: 48px;
       height: 48px;
-      translate: -24px 0;
+      translate: -12px 0;
       
     } 
     @media (min-width: $desktop-width) {
-      top: 40px;
+      top: 55px;
       width: 54px;
       height: 54px;
-      translate: -27px 0;
+      translate: -12px 0;
     } 
   }
 
@@ -57,8 +57,8 @@
       width: 48px;
       height: 48px;
       translate: -24px 0;
-      
     } 
+
     @media (min-width: $desktop-width) {
       top: 40px;
       width: 54px;
@@ -68,6 +68,16 @@
 
    
   }
+}
+
+
+.advantage__wrapper--knowledge span{
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: initial;
+
+  } 
 }
 
 .advantage__wrapper--safety::before {

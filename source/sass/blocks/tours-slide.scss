@@ -2,6 +2,12 @@
   padding: 30px 20px;
 }
 
+.tours-slide__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  } 
+}
+
 .tours-slide--elbrus {
   background-image: image-set(
     url("../../img/elbrus-card-mobile@1x.webp") 1x, 
@@ -100,6 +106,11 @@
     bottom: -15px;
     left: 0;
   }
+
+  
+  @media (min-width: $tablet-width) {
+    max-width: 260px;
+  } 
 }
 
 .tours-slide__features {
