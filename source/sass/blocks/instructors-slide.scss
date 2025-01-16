@@ -1,0 +1,35 @@
+.instructors-slide__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+  outline: 1px solid rgba(2, 102, 193, 0.102);
+  width: 290px;
+}
+
+.instructors-slide__content blockquote {
+  margin: 0;
+}
+
+.instructors-slide__content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.instructors-slide__cite {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  font-style: normal;
+  max-width: 150px;
+}
+
+.instructors-slide__link {
+  width: 24px;
+  height: 24px;
+}

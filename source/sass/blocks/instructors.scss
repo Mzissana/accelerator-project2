@@ -1,0 +1,20 @@
+.instructors__header {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 800;
+  color: $main-text-color;
+  margin: 0 0 17px;
+  align-self: flex-start;
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+    line-height: 25px;
+    margin: 0 0 10px;
+  } 
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+    line-height: 35px;
+    margin: 0 0 32px;
+  }
+}

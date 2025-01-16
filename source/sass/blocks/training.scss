@@ -1,0 +1,65 @@
+.training {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+}
+
+.training__wrapper {
+  padding: 36px 15px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  } 
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}
+
+
+.training__header {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 800;
+  color: $main-text-color;
+  margin: 0 0 17px;
+  align-self: flex-start;
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+    line-height: 25px;
+    margin: 0 0 10px;
+  } 
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+    line-height: 35px;
+    margin: 0 0 32px;
+  }
+}
+
+.training__wrapper p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $main-text-color;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+  } 
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 820px;
+  }
+}

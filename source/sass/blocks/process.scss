@@ -1,0 +1,82 @@
+.process {
+  display: flex;
+  flex-direction: column;
+  gap: 25px; 
+
+  @media (min-width: $tablet-width) {
+    gap: 104px;
+  } 
+
+  @media (min-width: $desktop-width) {
+    gap: 23px;
+  } 
+}
+
+.process__header {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+  } 
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    line-height: 21px;
+  }
+}
+
+.process__list {
+  padding: 0 0 0 29px;
+  max-width: 275px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.process__item {
+  padding: 0 0 0 34px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    left: 0;
+    background-color: $main-text-color;
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    mask-size: 25px 25px;
+    mask-repeat: no-repeat;
+  }
+}
+
+
+.process__item--map {
+  &::after {
+    mask-image: url("/__spritemap#sprite-map-icon-view");
+  }
+}
+
+.process__item--mountain {
+  &::after {
+    mask-image: url("/__spritemap#sprite-mountain-icon-view");
+  }
+}
+
+.process__item--tree {
+  &::after {
+    mask-image: url("/__spritemap#sprite-trees-icon-view");
+  }
+}
+
+.process__item--boot {
+  &::after {
+    mask-image: url("/__spritemap#sprite-boot-icon-view");
+  }
+}
