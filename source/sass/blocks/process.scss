@@ -35,11 +35,82 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 88%;
+    top: 6%;
+    left: 8px;
+    background-color: #0266c1;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    } 
+
+    @media (min-width: $desktop-width) {
+      display: initial;
+      height: 2px;
+      width: 88%;
+      left: 15px;
+      bottom: 0;
+      top: auto;
+    } 
+  }
+
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-areas: "map mountain" 
+    "boot tree";
+    grid-template-columns: 232px 272px;
+    gap: 104px 174px;
+    padding: 0;
+    width: 100%;
+    max-width: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    min-height: 102px;
+    max-width: none;
+
+  } 
 }
 
 .process__item {
   padding: 0 0 0 34px;
   position: relative;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    left: -27px;
+    top: 50%;
+    translate: 0 -50%;
+    background-color: #0266c1;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    } 
+
+    @media (min-width: $tablet-width) {
+      display: initial;
+      left: 10px;
+      bottom: -13px;
+      top: auto;
+    } 
+  }
 
   &::after {
     content: "";
@@ -54,28 +125,41 @@
     mask-size: 25px 25px;
     mask-repeat: no-repeat;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 22px; 
+  } 
+  
+  @media (min-width: $desktop-width) {
+    max-width: 253px;
+  } 
 }
 
 
 .process__item--map {
+  grid-area: map;
   &::after {
     mask-image: url("/__spritemap#sprite-map-icon-view");
   }
 }
 
 .process__item--mountain {
+  grid-area: mountain;
   &::after {
     mask-image: url("/__spritemap#sprite-mountain-icon-view");
   }
 }
 
 .process__item--tree {
+  grid-area: tree;
   &::after {
     mask-image: url("/__spritemap#sprite-trees-icon-view");
   }
 }
 
 .process__item--boot {
+  grid-area: boot;
   &::after {
     mask-image: url("/__spritemap#sprite-boot-icon-view");
   }

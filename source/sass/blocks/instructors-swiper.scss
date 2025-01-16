@@ -1,0 +1,53 @@
+.instructors-swiper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    overflow: hidden;
+  } 
+
+  @media (min-width: $tablet-width) {
+    overflow: hidden;
+  } 
+}
+
+.instructors-swiper__wrapper .instructors-slide {
+  width: 290px;
+  min-height: 385px;
+  overflow: visible;
+ 
+
+  @media (min-width: $tablet-width) {
+    width: 213px;
+    height: 388px;
+  } 
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+    height: 356px;
+  } 
+}
+
+.instructors-swiper__wrapper .instructors-slide__wrapper {
+  width: 290px;
+  min-height: 385px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+  border: 1px solid rgba(2, 102, 193, 0.102); 
+  overflow: visible;
+ 
+
+  @media (min-width: $tablet-width) {
+    width: 213px;
+    height: 388px;
+  } 
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+    height: 356px;
+  } 
+}
+

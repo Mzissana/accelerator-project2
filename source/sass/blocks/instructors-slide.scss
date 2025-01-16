@@ -1,10 +1,19 @@
-.instructors-slide__wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  padding: 15px;
-  outline: 1px solid rgba(2, 102, 193, 0.102);
-  width: 290px;
+.instructors-slide__image-container {
+  width: 260px;
+  height: 200px;
+  overflow: hidden;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  } 
+}
+
+.instructors-slide__image {
+  object-fit: cover;
+  display: block;
 }
 
 .instructors-slide__content blockquote {
@@ -26,10 +35,38 @@
   line-height: 16px;
   font-weight: 700;
   font-style: normal;
-  max-width: 150px;
+  max-width: 140px;
+  position: relative;
 }
 
 .instructors-slide__link {
   width: 24px;
   height: 24px;
+  position: absolute;
+  top: 0;
+  right: -100%;
+  translate: -20px 0;
+  outline: 1px solid rgb(45, 56, 63, 0.3);
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: $main-text-color;
+    mask-image: url("/__spritemap#sprite-vk-icon-view");
+    mask-size: 14px 8px;
+    mask-repeat: no-repeat;
+    mask-position: 50% 50%;
+  }
+
+  @media (min-width: $tablet-width) {
+    right: -43%;
+  } 
+
+  @media (min-width: $desktop-width) {
+    right: -98%;
+  } 
+
+
 }
