@@ -9,15 +9,39 @@
   @media (min-width: $tablet-width) {
     width: auto;
   } 
+
+  @media (min-width: $desktop-width) {
+    overflow: unset;
+    height: 200px;
+  } 
+
+ 
 }
 
 .instructors-slide__image {
   object-fit: cover;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 185px;
+  height: 200px;
+  object-position: -33px 0px;
+  } 
+
+  @media (min-width: $desktop-width) {
+    width: 255px;
+    height: 200px;
+  object-position: 0 0;
+  } 
+  
 }
+
+
 
 .instructors-slide__content blockquote {
   margin: 0;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .instructors-slide__content {
@@ -61,7 +85,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    right: -43%;
+    right: -45%;
   } 
 
   @media (min-width: $desktop-width) {

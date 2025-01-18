@@ -1,10 +1,11 @@
+
+
 .gallery-slide__wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 7px 0;
   overflow: hidden;
   height: 266px;
-  width: 100%;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
     min-height: 418px;
@@ -12,25 +13,209 @@
 
   @media (min-width: $desktop-width) {
     min-height: 463px;
-    width: 284px;
+    width: auto;
   } 
 
 }
 
+
+
 .gallery-slide__image {
-  width: 100%; 
-  height: 100%;
   object-fit: cover; 
 }
 
-.gallery-slide__image--big {
-  width: 100%; 
-  min-height: 266px;
-  object-fit: cover; 
-}
+
+
 
 .gallery-slide__wrapper picture {
-  flex: 1; 
   overflow: hidden; 
 }
 
+
+
+.gallery-slide--double:nth-of-type(2) picture:nth-of-type(1) .gallery-slide__image {
+  height: 149px;
+  width: 180px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: -10px -14px;
+
+
+  @media (min-width: $tablet-width) {
+    height: 228px;
+    width: 283px;
+    object-position: -15px -23px;
+  } 
+
+  @media (min-width: $desktop-width) {
+    height: 232px;
+    width: 284px;
+
+        object-position: 0px -1px;
+  } 
+  
+}
+
+.gallery-slide--double:nth-of-type(2) picture:nth-of-type(2) .gallery-slide__image {
+  height: 222px;
+  width: 279px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: -63px;
+
+  @media (min-width: $tablet-width) {
+    height: 222px;
+        width: 281px;
+    object-position: -15px 1px;
+  } 
+
+  @media (min-width: $desktop-width) {
+    height: 223px;
+    width: 292px;
+object-position: -4px -3px;
+  } 
+}
+
+
+.gallery-slide--double:nth-of-type(4) picture:nth-of-type(1) .gallery-slide__image {
+  height: 149px;
+  width: 180px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: -10px -14px;
+
+
+  @media (min-width: $tablet-width) {
+    height: 228px;
+    width: 283px;
+    object-position: -15px -23px;
+  } 
+
+  @media (min-width: $desktop-width) {
+    height: 232px;
+    width: 283px;
+
+        object-position: 0 0;
+  } 
+  
+}
+
+.gallery-slide--double:nth-of-type(4) picture:nth-of-type(2) .gallery-slide__image {
+  height: 222px;
+  width: 279px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: -63px;
+
+  @media (min-width: $tablet-width) {
+    height: 222px;
+        width: 281px;
+    object-position: -15px 1px;
+  } 
+
+  @media (min-width: $desktop-width) {
+    height: 225px;
+    width: 288px;
+object-position: -1px -2px;
+  } 
+}
+
+
+
+
+
+
+
+.gallery-slide__image--big {
+  width: 158px; 
+  height: 270px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: -4px -2px;
+
+  @media (min-width: $tablet-width) {
+    width: 256px; 
+    height: 422px;
+    object-position: -3px -2px;
+  } 
+
+  @media (min-width: $desktop-width) {
+    height: 462px;
+        width: 284px;
+    
+        object-position: 0px -1px;
+  } 
+  
+}
+
+
+.gallery-slide:nth-of-type(3) .gallery-slide__image--big {
+  width: 158px; 
+  height: 270px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: -4px -2px;
+
+  @media (min-width: $tablet-width) {
+    width: 261px; 
+    height: 424px;
+    object-position: -4px -4px;
+  } 
+
+  @media (min-width: $desktop-width) {
+    height: 462px;
+        width: 285px;
+    
+        object-position: 0px -2px;
+  } 
+  
+}
+
+.gallery-slide:nth-of-type(5) .gallery-slide__image--big {
+  width: 158px; 
+  height: 270px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: -4px -2px;
+
+  @media (min-width: $tablet-width) {
+    width: 261px; 
+    height: 424px;
+    object-position: -4px -4px;
+  } 
+
+  @media (min-width: $desktop-width) {
+    height: 462px;
+        width: 284px;
+    
+        object-position: 0px -1px;
+  } 
+  
+}
+
+
+
+.gallery-slide--double .gallery-slide__wrapper {
+  display: grid;
+  grid-template-rows: 134px 125px;
+  grid-template-columns: 158px;
+  align-items: flex-start;
+  overflow: hidden;
+  gap: 8px;
+  height: 266px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-rows: 208px 199px;
+    grid-template-columns: 255px;
+    align-items: flex-start;
+    overflow: hidden;
+    gap: 8px;
+    height: 418px;
+  } 
+  @media (min-width: $desktop-width) {
+    grid-template-rows: 231px 223px;
+    grid-template-columns: 284px;
+  } 
+  
+}

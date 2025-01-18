@@ -1,5 +1,5 @@
 .about__wrapper {
-  padding: 20px 0;
+  padding: 20px 0 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -18,7 +18,7 @@
 }
 
 .about__info {
-  padding: 16px 15px 20px;
+  padding: 16px 15px 22px;
   display: flex;
   flex-direction: column;
   width: 320px;
@@ -63,7 +63,7 @@
   line-height: 16px;
   font-weight: 700;
   color: $main-text-color;
-  margin: 0 0 15px;
+  margin: 0 0 14px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;

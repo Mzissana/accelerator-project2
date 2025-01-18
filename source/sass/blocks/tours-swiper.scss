@@ -63,6 +63,21 @@
     top: 82px;
     right: 49px;
   } 
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    gap: 4px;
+    position: absolute;
+    justify-content: space-between;
+  } 
+
+  @media (min-width: $desktop-width) {
+    top: 17%;
+    right: 8%;
+    translate: -9px 3px;
+  } 
   
 }
 

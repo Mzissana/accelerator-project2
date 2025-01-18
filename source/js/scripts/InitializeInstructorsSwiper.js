@@ -5,39 +5,44 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 function initInstructorsSwiper() {
-  let currentDevice = getCurrentDevice(); // Переменная для хранения текущего устройства
-  const swiper = new Swiper('.instructors-swiper', {
-    modules: [Navigation, Pagination],
-    slidesPerView: getSlidesPerView(currentDevice), // Инициализация с текущим количеством слайдов
-    spaceBetween:20,
-    loop: true,
-    navigation: {
-      nextEl: ".training-swiper__button--next",
-      prevEl: ".training-swiper__button--prev",
-    },
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    simulateTouch: currentDevice !== 'desktop',
-    
-  });
+  let currentDevice = getCurrentDevice();
+  let swiper = null;
 
-  // Функция для обновления Swiper при изменении размера экрана
+  function initializeSwiper() {
+    if (swiper) swiper.destroy(true, true);
+
+    swiper = new Swiper('.instructors-swiper', {
+      modules: [Navigation, Pagination],
+      slidesPerView: getSlidesPerView(currentDevice),
+      spaceBetween: 20,
+      loop: true,
+      navigation: {
+        nextEl: ".training-swiper__button--next",
+        prevEl: ".training-swiper__button--prev",
+      },
+      simulateTouch: currentDevice !== 'desktop',
+      on: {
+        init: function () {
+          // Переключение на нужный слайд после инициализации
+          this.slideToLoop(getFirstSlide(currentDevice), 0, false);
+        },
+      },
+    });
+  }
+
+  // Обновляем Swiper при изменении размера экрана
   window.addEventListener('resize', () => {
-    const newDevice = getCurrentDevice(); // Получаем новое устройство при изменении экрана
+    const newDevice = getCurrentDevice();
     if (newDevice !== currentDevice) {
-      currentDevice = newDevice; // Обновляем текущий тип устройства
-      const newSlidesPerView = getSlidesPerView(newDevice); // Получаем новое количество слайдов
-
-      swiper.params.slidesPerView = newSlidesPerView; // Обновляем параметры Swiper
-      swiper.params.simulateTouch = newDevice !== 'desktop'; // Обновляем simulateTouch
-      swiper.update(); // Пересчитываем и применяем новые параметры
+      currentDevice = newDevice;
+      initializeSwiper();
     }
   });
+
+  initializeSwiper();
 }
 
-// Функция для определения текущего устройства
+// Определение текущего устройства
 function getCurrentDevice() {
   if (window.matchMedia('(min-width: 1440px)').matches) {
     return 'desktop';
@@ -48,16 +53,29 @@ function getCurrentDevice() {
   }
 }
 
-// Функция для получения количества слайдов в зависимости от устройства
+// Определение количества слайдов
 function getSlidesPerView(device) {
   switch (device) {
     case 'desktop':
-      return 4; 
+      return 4;
     case 'tablet':
       return 3;
     case 'mobile':
     default:
       return 1;
+  }
+}
+
+// Установка первого слайда
+function getFirstSlide(device) {
+  switch (device) {
+    case 'desktop':
+      return 4;
+    case 'tablet':
+      return 3; // Устанавливаем 3-й слайд как начальный на планшете
+    case 'mobile':
+    default:
+      return 0;
   }
 }
 

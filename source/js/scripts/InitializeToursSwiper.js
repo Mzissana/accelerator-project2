@@ -60,7 +60,7 @@ function getSpace(device) {
     case 'desktop':
       return 30; 
     case 'tablet':
-      return 18;
+      return 17;
     case 'mobile':
     default:
       return 15;

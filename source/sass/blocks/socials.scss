@@ -1,7 +1,7 @@
 .socials__list {
   display: flex;
   flex-direction: row;
-  gap: 19px;
+  gap: 17px;
 
   @media (min-width: $tablet-width) {
     gap: 19px;
@@ -45,13 +45,14 @@
 }
 
 .socials__link {
-  padding: 5px;
+  padding: 4px;
 }
 
 .socials__icon--vkontakte {
-  width: 17px;
+  width: 16px;
   height: 9px;
   background-repeat: no-repeat;
+  background-size:  16px 9px;
   background-color: $icon-main;
   mask-image: url("../../img/sprite/vk-icon.svg");
   mask-repeat: no-repeat;
@@ -61,6 +62,7 @@
   width: 9px;
   height: 16px;
   background-repeat: no-repeat;
+  background-size: 9px 16px;
   background-color: $icon-main;
   mask-image: url("../../img/sprite/ok-icon.svg");
   mask-repeat: no-repeat;
@@ -68,8 +70,10 @@
 
 .socials__icon--reddit {
   width: 14px;
-  height: 16px;
+  height: 15px;
   background-repeat: no-repeat;
+  background-size: 14px 15px;
+
   background-color: $icon-main;
   mask-image: url("../../img/sprite/reddit-icon.svg");
   mask-repeat: no-repeat;

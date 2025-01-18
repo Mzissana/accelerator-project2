@@ -2,6 +2,7 @@
   width: 100%;
   position: relative;
   overflow: hidden;
+  flex-direction: row-reverse;
 
   @media (min-width: $tablet-width) {
     overflow: hidden;
@@ -14,7 +15,6 @@
 
 .instructors-swiper__wrapper .instructors-slide {
   width: 290px;
-  min-height: 385px;
   overflow: visible;
  
 
@@ -31,13 +31,14 @@
 
 .instructors-swiper__wrapper .instructors-slide__wrapper {
   width: 290px;
-  min-height: 385px;
+  min-height: 356px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  padding: 15px;
+  gap: 16px;
+  padding: 14px;
   border: 1px solid rgba(2, 102, 193, 0.102); 
   overflow: visible;
+  background-color: #ffffff;
  
 
   @media (min-width: $tablet-width) {

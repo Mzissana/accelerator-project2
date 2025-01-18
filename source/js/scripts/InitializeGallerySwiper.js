@@ -9,7 +9,7 @@ function initGallerySwiper() {
   const swiper = new Swiper('.gallery-swiper', {
     modules: [Navigation, Pagination],
     slidesPerView: getSlidesPerView(currentDevice), // Инициализация с текущим количеством слайдов
-    spaceBetween: 5,
+    spaceBetween: getSpace(currentDevice),
     loop: true,
     navigation: {
       nextEl: ".gallery-swiper__button--next",
@@ -29,7 +29,8 @@ function initGallerySwiper() {
     if (newDevice !== currentDevice) {
       currentDevice = newDevice; // Обновляем текущий тип устройства
       const newSlidesPerView = getSlidesPerView(newDevice); // Получаем новое количество слайдов
-
+      const newSpaceBetween = getSpace(newDevice);
+      swiper.params.spaceBetween = newSpaceBetween;
       swiper.params.slidesPerView = newSlidesPerView; // Обновляем параметры Swiper
       swiper.params.simulateTouch = newDevice !== 'desktop'; // Обновляем simulateTouch
       swiper.update(); // Пересчитываем и применяем новые параметры
@@ -60,5 +61,18 @@ function getSlidesPerView(device) {
       return 2;
   }
 }
+
+function getSpace(device) {
+  switch (device) {
+    case 'desktop':
+      return 0; 
+    case 'tablet':
+      return 5;
+    case 'mobile':
+    default:
+      return 5;
+  }
+}
+
 
 export default initGallerySwiper;

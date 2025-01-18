@@ -14,8 +14,8 @@
   } 
 
   @media (min-width: $desktop-width) {
-    gap: 25px;
-    padding: 135px 100px 130px;
+    gap: 49px;
+    padding: 124px 120px 100px;
     width: 1440px;
   } 
 }
@@ -37,7 +37,7 @@
   @media (min-width: $desktop-width) {
     font-size: 35px;
     line-height: 35px;
-    margin: 0 0 32px;
+    margin: 0;
   }
 }
 
@@ -73,5 +73,10 @@
     font-size: 16px;
   line-height: 16px;
   padding: 6px 30px 6px 10px;
+  } 
+
+  @media (min-width: $desktop-width) {
+
+  padding: 14px 30px 14px 10px;
   } 
 }

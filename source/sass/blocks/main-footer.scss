@@ -19,7 +19,7 @@
   width: 320px;
   display: flex;
   flex-direction: column;
-  padding: 23px 15px 20px;
+  padding: 23px 15px 21px;
   gap: 23px 0;
   justify-content: space-between;
   align-items: center;
@@ -94,6 +94,11 @@
   width: 100%;
   display: flex;
   justify-content: center;  
+  padding: 1px 0 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .main-footer__confidentiality {

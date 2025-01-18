@@ -29,6 +29,7 @@
     top: -3px;
     left: 0;
     background-repeat: no-repeat;
+    mask-repeat: no-repeat;
   }
 }
 
@@ -48,7 +49,9 @@
 
 .tours-slide--belukha .tours-slide-extra-feature--difficulty .tours-slide-extra-feature__value {
   &::after {
-   mask-image: url(/__spritemap#sprite-4stars-icon-view);
+   mask-image: url(/__spritemap#sprite-3stars-icon-view);
+   mask-repeat: no-repeat;
+   z-index: 10;
   }
  }
 

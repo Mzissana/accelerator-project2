@@ -13,9 +13,9 @@
   &::after {
     content: "";
     position: absolute;
-    width: 150px;
+    width: 149px;
     height: 595px;
-    top: 0;
+    top: 679px;
     right: 0;
     z-index: -1;
     background-image: image-set(
@@ -30,9 +30,10 @@
   
 
   @media (min-width: $tablet-width) {
-    width: 400px;
+    width: 422px;
     height: 1630px;
-    background-size: 400px 1630px;
+    top: 1024px;
+    background-size: 422px 1630px;
     background-image: image-set(
     url("../../img/tours-background-tablet@1x.webp") 1x, 
     url("../../img/tours-background-tablet@2x.webp") 2x, 
@@ -42,6 +43,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 600px;
+    height: 1630px;
+    top: 800px;
+    background-size: 600px 1630px;
     background-image: image-set(
     url("../../img/tours-background-desktop@1x.webp") 1x, 
     url("../../img/tours-background-desktop@2x.webp") 2x, 
