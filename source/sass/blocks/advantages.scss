@@ -15,7 +15,10 @@
     gap: 0;
     padding: 135px 0;
     width: 100%;
-  overflow: hidden;
+    justify-content: center;
+    overflow: hidden;
+    max-width: 1440px;
+
   } 
 }
 
@@ -117,7 +120,6 @@
 
 .advantages__swiper {
   @media (min-width: $desktop-width) {
-    width: 100%;
     overflow: visible;
     padding: 0 120px;
     display: flex;

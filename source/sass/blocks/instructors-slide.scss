@@ -50,7 +50,7 @@
   gap: 15px;
 }
 
-.instructors-slide__cite {
+.instructors-slide__content cite {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -91,6 +91,29 @@
   @media (min-width: $desktop-width) {
     right: -98%;
   } 
+}
 
 
+.instructors-slide__link:hover {
+  outline: 1px solid #1c3374;
+}
+
+.instructors-slide__link:focus {
+  outline: none;
+}
+
+.instructors-slide__link:active {
+  background-color: #0266C1;
+  outline: none;
+    &::after {
+    background-color: #ffffff;
+  }
+}
+
+.instructors-slide__link:disabled {
+  background-color: #ffffff;
+  outline: none;
+    &::after {
+    background-color: #999999;
+  }
 }

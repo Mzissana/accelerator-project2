@@ -1,6 +1,6 @@
 .reviews-swiper {
-  width: 320px; /* Ограничьте контейнер */
-  overflow: visible; /* Скрывает лишние элементы */
+  width: 320px; 
+  overflow: visible; 
 
   @media (min-width: $tablet-width) {
     width: 565px;

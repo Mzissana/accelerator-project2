@@ -19,7 +19,7 @@
 .subscription-form__input {
   border-radius: 2px;
   border: none;
-  outline: 1px solid rgba(2, 102, 193, 0.1);
+  outline: $form-base-border;
   width: 100%;
   background-color: #ffffff;
   padding: 15px;
@@ -40,6 +40,23 @@
     width: 360px;
   }
 }
+
+.subscription-form__input:hover {
+  outline: $form-hover-border;
+}
+
+.subscription-form__input:focus {
+  outline: $form-focus-border;
+}
+
+.subscription-form__input:disabled {
+  outline: $form-disabled-border;
+}
+
+.subscription-form__input--invalid{
+  outline: $form-error-border;
+}
+
 
 .subscription-form__input::placeholder {
   color: rgb(45, 56, 63, 0.5);
@@ -62,4 +79,28 @@
     height: 56px;
     width: 180px;
   }
+
+
+  &:hover {
+    background-color: #ffffff;
+    outline: 1px solid #1c3374;
+    color: #1c3374;
+  }
+  
+  &:focus {
+    background-color: #ffffff;
+    color: #1c3374;
+    outline: none;
+    border: none;
+  }
+
+  &:active {
+    background-color: #1c3374;
+    color:#ffffff;
+  }
+  
+  &:disabled {
+    background-color: #999999;
+  }
 }
+

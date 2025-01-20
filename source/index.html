@@ -28,27 +28,27 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list list-reset">
             <li class="main-nav__item">
-              <a class="main-nav__link link-reset" href="#">Туры</a>
+              <a class="main-nav__link link-reset" href="#tours">Туры</a>
             </li>
 
             <li class="main-nav__item main-nav__item--active-catalog">
-              <a class="main-nav__link link-reset" href="#"> Обучение </a>
+              <a class="main-nav__link link-reset" href="#training"> Обучение </a>
             </li>
 
             <li class="main-nav__item">
-              <a class="main-nav__link link-reset" href="#">О нас</a>
+              <a class="main-nav__link link-reset" href="#about">О нас</a>
             </li>
 
             <li class="main-nav__item">
-              <a class="main-nav__link link-reset" href="#">Отзывы</a>
+              <a class="main-nav__link link-reset" href="#reviews">Отзывы</a>
             </li>
 
             <li class="main-nav__item">
-              <a class="main-nav__link link-reset" href="#">Фотографии</a>
+              <a class="main-nav__link link-reset" href="#gallery">Фотографии</a>
             </li>
 
             <li class="main-nav__item">
-              <a class="main-nav__link link-reset" href="#">Контакты</a>
+              <a class="main-nav__link link-reset" href="#contacts">Контакты</a>
             </li>
           </ul>
         </div>
@@ -127,7 +127,7 @@
       </div>
     </section>
 
-    <section class="main__tours tours" data-test="tours">
+    <section class="main__tours tours" id="tours" data-test="tours">
       <div class="tours__wrapper">
         <h2 class="tours__header">Ближайшие туры</h2>
 
@@ -340,7 +340,7 @@
       </div>
     </section>
 
-    <section class="main__training training" data-test="training">
+    <section class="main__training training" id="training" data-test="training">
       <div class="training__wrapper">
         <div class="training__info">
           <h2 class="training__header">Обучение</h2>
@@ -370,7 +370,7 @@
                     </picture>
                   </div>
                   <div class="instructors-slide__content">
-                    <cite class="instructors-slide__cite">Надежда
+                    <cite >Надежда
                       Колесниченко
                       <a class="instructors-slide__link" href="#"><span class="visually-hidden">Вконтакте</span></a>
 
@@ -396,7 +396,7 @@
                     </picture>
                   </div>
                   <div class="instructors-slide__content">
-                    <cite class="instructors-slide__cite">Федор
+                    <cite >Федор
                       Кайгородов
                       <a class="instructors-slide__link" href="#"><span class="visually-hidden">Вконтакте</span></a>
 
@@ -422,7 +422,7 @@
                     </picture>
                   </div>
                   <div class="instructors-slide__content">
-                    <cite class="instructors-slide__cite">Даниэль
+                    <cite >Даниэль
                       Васнецов
                       <a class="instructors-slide__link" href="#"><span class="visually-hidden">Вконтакте</span></a>
 
@@ -451,7 +451,7 @@
                     </picture>
                   </div>
                   <div class="instructors-slide__content">
-                    <cite class="instructors-slide__cite">Александр
+                    <cite >Александр
                       Прокофьев
                       <a class="instructors-slide__link" href="#"><span class="visually-hidden">Вконтакте</span></a>
 
@@ -478,7 +478,7 @@
                     </picture>
                   </div>
                   <div class="instructors-slide__content">
-                    <cite class="instructors-slide__cite">Светлана
+                    <cite >Светлана
                       Афиногенова
                       <a class="instructors-slide__link" href="#"><span class="visually-hidden">Вконтакте</span></a>
 
@@ -523,7 +523,7 @@
       </div>
     </section>
 
-    <section class="main__about about" data-test="about">
+    <section class="main__about about" id="about" data-test="about">
       <div class="about__wrapper">
         <div class="about__image-wrapper">
           <picture>
@@ -562,7 +562,7 @@
       </div>
     </section>
 
-    <section class="main__reviews reviews" data-test="reviews">
+    <section class="main__reviews reviews" id="reviews" data-test="reviews">
       <div class="reviews__wrapper">
         <h2 class="reviews__header">Отзывы</h2>
 
@@ -708,7 +708,7 @@
       </div>
     </section>
 
-    <section class="main__advantages advantages" data-test="adv">
+    <section class="main__advantages advantages" id="advantages" data-test="adv">
       <div class="advantages__wrapper">
         <h2>Преимущества</h2>
         <div class="advantages__swiper advantages-swiper">
@@ -766,7 +766,7 @@
       </div>
     </section>
 
-    <section class="main__gallery gallery" data-test="gallery">
+    <section class="main__gallery gallery" id="gallery" data-test="gallery">
       <div class="gallery__wrapper">
 
         <div class="gallery__info">
@@ -917,7 +917,7 @@
         </p>
         <form class="subscription__form subscription-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="subscription-form__label visually-hidden" for="phone">Телефон</label>
-          <input class="subscription-form__input" type="tel" id="phone" name="phone" placeholder="Телефон"
+          <input class="subscription-form__input" type="tel" id="phone" name="phone" placeholder="Телефон" pattern="\+?\d{0,15}" 
             data-placeholder="+7 (000)-000-00-00" required>
           <label class="subscription-form__label visually-hidden" for="email">Email</label>
           <input class="subscription-form__input" type="email" id="email" name="email" placeholder="Email"
@@ -928,7 +928,7 @@
     </section>
   </main>
   <footer class="footer" data-test="footer">
-    <section class="footer__contacts contacts">
+    <section class="footer__contacts contacts" id="contacts">
       <div class="contacts__wrapper">
         <h2 class="contacts__header">Контакты</h2>
         <p>
@@ -944,7 +944,8 @@
 
           <li class="contacts__item contact contacts__item--email">
             <h3 class="contact__header">Email</h3>
-            <p class="contact__subtitle">info@lifetour.com</p>
+              <a class="contact__subtitle link-reset" href="mailto:info@lifetour.com">info@lifetour.com</a>
+    
           </li>
 
           <li class="contacts__item contact contacts__item--address">
@@ -989,23 +990,23 @@
 
         <ul class="main-footer__links footer-links list-reset">
           <li class="footer-links__item">
-            <a class="footer-links__link link-reset" href="#"> Туры </a>
+            <a class="footer-links__link link-reset" href="#tours"> Туры </a>
           </li>
           <li class="footer-links__item">
-            <a class="footer-links__link link-reset" href="#"> Обучение </a>
+            <a class="footer-links__link link-reset" href="#training"> Обучение </a>
           </li>
           <li class="footer-links__item">
-            <a class="footer-links__link link-reset" href="#"> О нас </a>
+            <a class="footer-links__link link-reset" href="#about"> О нас </a>
           </li>
           <li class="footer-links__item">
-            <a class="footer-links__link link-reset" href="#"> Отзывы </a>
+            <a class="footer-links__link link-reset" href="#reviews"> Отзывы </a>
           </li>
           <li class="footer-links__item">
-            <a class="footer-links__link link-reset" href="#"> Фотографии </a>
+            <a class="footer-links__link link-reset" href="#gallery"> Фотографии </a>
           </li>
 
           <li class="footer-links__item">
-            <a class="footer-links__link link-reset" href="#"> Контакты </a>
+            <a class="footer-links__link link-reset" href="#contacts"> Контакты </a>
           </li>
         </ul>
 

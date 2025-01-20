@@ -12,7 +12,7 @@ function initReviewsSwiper() {
     spaceBetween: getSpace(currentDevice),
     slidesPerGroup: 1,
     centeredSlides: false,
-    loop: true,
+    loop: false,
     navigation: {
       nextEl: ".reviews-swiper__button--next",
       prevEl: ".reviews-swiper__button--prev",

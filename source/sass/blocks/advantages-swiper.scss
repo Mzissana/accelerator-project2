@@ -25,6 +25,21 @@
   display: flex;
   justify-content: center; 
   align-items: center;
+
+  &:hover {
+    background-color: #ffffff;
+    outline: 1px solid #1c3374;
+  }
+  
+  &:focus {
+    background-color: #ffffff;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #1c3374;
+  }
+
 }
 
 .advantages .advantages-swiper__button--next {
@@ -61,5 +76,18 @@
     background-repeat: no-repeat;
     z-index: 10;
     position: absolute;
+  }
+}
+
+
+.advantages .advantages-swiper__button:hover {
+  &::after {
+    background-color: #1c3374;
+  }
+}
+
+.advantages .advantages-swiper__button:focus {
+  &::after {
+    background-color: #1c3374;
   }
 }

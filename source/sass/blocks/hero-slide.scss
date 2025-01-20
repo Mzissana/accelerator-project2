@@ -26,9 +26,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-end;
-    padding: 81px 120px;
+    padding: 81px 540px 81px 120px;
     min-height: 800px;
   }
   
@@ -105,7 +105,34 @@
   background-color: $button;
   border: none;
   padding: 20px;
+  box-shadow: none;
+
+
+  &:hover {
+    background-color: #ffffff;
+    outline: 1px solid #1c3374;
+    color: #1c3374;
+  }
+  
+  &:focus {
+    background-color: #ffffff;
+    color: #1c3374;
+    outline: none;
+    border: none;
+  }
+
+  &:active {
+    background-color: #1c3374;
+    color:#ffffff;
+  }
+  
+  &:disabled {
+    background-color: #999999;
+  }
+
 }
+
+
 
 .hero-slide--kavkaz {
   display: flex;

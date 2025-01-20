@@ -1,5 +1,12 @@
 .tours-slide {
   padding: 30px 20px;
+  @media (min-width: $tablet-width) {
+    max-width: 330px;
+  } 
+
+  @media (min-width: $desktop-width) {
+    max-width: 380px;
+  } 
 }
 
 .tours-slide__wrapper {

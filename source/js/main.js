@@ -1,29 +1,39 @@
 
-//form
 import form from './scripts/InitializeForm';
+import setupFormValidation from './scripts/ValidateForm.js';
+import initHeroSwiper from './scripts/InitializeHeroSwiper';
+import initGallerySwiper from './scripts/InitializeGallerySwiper';
+import initAdvantagesSwiper from './scripts/InitializeAdvantagesSwiper';
+import initReviewsSwiper from './scripts/InitializeReviewsSwiper';
+import initToursSwiper from './scripts/InitializeToursSwiper';
+import initInstructorsSwiper from './scripts/InitializeInstructorsSwiper';
+import initMenu from './scripts/InitializeMenu';
+
+
+
+//form 
+document.addEventListener('DOMContentLoaded', form);
+
+document.addEventListener("DOMContentLoaded", () => {
+  setupFormValidation();
+});
 
 //slider
-import initHeroSwiper from './scripts/InitializeHeroSwiper';
 document.addEventListener('DOMContentLoaded', initHeroSwiper);
 
 
-import initGallerySwiper from './scripts/InitializeGallerySwiper';
 document.addEventListener('DOMContentLoaded', initGallerySwiper);
 
-import initAdvantagesSwiper from './scripts/InitializeAdvantagesSwiper';
 document.addEventListener('DOMContentLoaded', initAdvantagesSwiper);
 
-import initReviewsSwiper from './scripts/InitializeReviewsSwiper';
 document.addEventListener('DOMContentLoaded', initReviewsSwiper);
 
 
-import initToursSwiper from './scripts/InitializeToursSwiper';
 document.addEventListener('DOMContentLoaded', initToursSwiper);
 
 
-import initInstructorsSwiper from './scripts/InitializeInstructorsSwiper';
 document.addEventListener('DOMContentLoaded', initInstructorsSwiper);
 //menu
 
-import initMenu from './scripts/InitializeMenu';
 document.addEventListener('DOMContentLoaded', initMenu);
+

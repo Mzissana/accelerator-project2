@@ -16,15 +16,12 @@ function initAdvantagesSwiper() {
         slidesPerGroup: 1,
         spaceBetween: 30,
         centeredSlides: true,
-        initialSlide: 2,
+        initialSlide: 0,
         loop: true,
+        loopAddBlankSlides: false,
         navigation: {
-          nextEl: ".reviews-swiper__button--next",
-          prevEl: ".reviews-swiper__button--prev",
-        },
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
+          nextEl: ".advantages-swiper__button--next",
+          prevEl: ".advantages-swiper__button--prev",
         },
         simulateTouch: true,
       });
@@ -46,10 +43,8 @@ function initAdvantagesSwiper() {
     }
   }
 
-  // Инициализация при загрузке страницы
   handleResize();
 
-  // Переключение при изменении размера окна
   window.addEventListener('resize', handleResize);
 }
 

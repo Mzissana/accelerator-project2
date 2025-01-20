@@ -15,18 +15,12 @@ function initInstructorsSwiper() {
       modules: [Navigation, Pagination],
       slidesPerView: getSlidesPerView(currentDevice),
       spaceBetween: 20,
-      loop: true,
+      loop: false,
       navigation: {
         nextEl: ".training-swiper__button--next",
         prevEl: ".training-swiper__button--prev",
       },
       simulateTouch: currentDevice !== 'desktop',
-      on: {
-        init: function () {
-          // Переключение на нужный слайд после инициализации
-          this.slideToLoop(getFirstSlide(currentDevice), 0, false);
-        },
-      },
     });
   }
 

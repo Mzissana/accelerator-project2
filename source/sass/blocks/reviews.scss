@@ -69,6 +69,20 @@
   display: flex;
   justify-content: center; 
   align-items: center;
+
+  &:hover {
+    background-color: #ffffff;
+    outline: 1px solid #1c3374;
+  }
+  
+  &:focus {
+    background-color: #ffffff;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #1c3374;
+  }
 }
 
 .reviews .reviews-swiper__button--next {
@@ -95,7 +109,6 @@
   width: 37px;
   height: 35px;
   position: relative;
-  background-color: #999999;
 
   &::after {
     content: "";
@@ -109,3 +122,21 @@
   }
 }
 
+
+.reviews .reviews-swiper__button:hover {
+  &::after {
+    background-color: #1c3374;
+  }
+}
+
+.reviews .reviews-swiper__button:focus {
+  &::after {
+    background-color: #1c3374;
+  }
+}
+
+.reviews .swiper-button-prev.swiper-button-disabled,
+.reviews .swiper-button-next.swiper-button-disabled {
+  opacity: 100%;
+  background-color: #999999;
+}

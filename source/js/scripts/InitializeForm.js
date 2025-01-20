@@ -14,6 +14,4 @@ function initializeForm() {
   });
 }
 
-document.addEventListener('DOMContentLoaded', initializeForm);
-
 export default initializeForm;

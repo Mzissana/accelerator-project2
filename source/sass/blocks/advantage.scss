@@ -86,15 +86,6 @@
 
 .advantage__wrapper--safety::before {
   mask-image: url("/__spritemap#sprite-security-icon-view");
-  top: 29px;
-}
-
-.advantage__wrapper--safety::after {
-  top: 20px;
-    left: 50%;
-    translate: -20px 1px;
-    width: 40px;
-    height: 40px;
 }
 
 .advantage__wrapper--knowledge::before {

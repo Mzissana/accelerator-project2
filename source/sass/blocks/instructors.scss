@@ -40,9 +40,6 @@
   @media (min-width: $desktop-width) {
     top:  18px;
   } 
-
-  
-  
 }
 
 .instructors .training-swiper__button {
@@ -55,8 +52,21 @@
   justify-content: center; 
   align-items: center;
 
- 
- 
+  &:hover {
+    background-color: #ffffff;
+    outline: 1px solid #1c3374;
+  }
+  
+  &:focus {
+    background-color: #ffffff;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #1c3374;
+  }
+  
+  
 }
 
 .instructors .training-swiper__button--next {
@@ -83,7 +93,6 @@
   width: 37px;
   height: 35px;
   position: relative;
-  background-color: #999999;
 
   &::after {
     content: "";
@@ -97,3 +106,20 @@
   }
 }
 
+.instructors .training-swiper__button:hover {
+  &::after {
+    background-color: #1c3374;
+  }
+}
+
+.instructors .training-swiper__button:focus {
+  &::after {
+    background-color: #1c3374;
+  }
+}
+
+.instructors .swiper-button-prev.swiper-button-disabled,
+.instructors .swiper-button-next.swiper-button-disabled {
+  opacity: 100%;
+  background-color: #999999;
+}
