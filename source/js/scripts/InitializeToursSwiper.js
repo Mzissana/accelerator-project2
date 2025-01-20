@@ -5,33 +5,31 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 function initToursSwiper() {
-  let currentDevice = getCurrentDevice(); // Переменная для хранения текущего устройства
+  let currentDevice = getCurrentDevice(); 
   const swiper = new Swiper('.tours-swiper', {
     modules: [Navigation, Pagination],
-    slidesPerView: getSlidesPerView(currentDevice), // Инициализация с текущим количеством слайдов
+    slidesPerView: getSlidesPerView(currentDevice), 
     spaceBetween: getSpace(currentDevice),
-    loop: true,
+    loop: false,
     navigation: {
-      nextEl: ".tours-swiper__button--next",
-      prevEl: ".tours-swiper__button--prev",
+      nextEl: ".tours-swiper-container__button--next",
+      prevEl: ".tours-swiper-container__button--prev",
     },
     simulateTouch: true,
   });
 
-  // Функция для обновления Swiper при изменении размера экрана
   window.addEventListener('resize', () => {
-    const newDevice = getCurrentDevice(); // Получаем новое устройство при изменении экрана
+    const newDevice = getCurrentDevice(); 
     if (newDevice !== currentDevice) {
-      currentDevice = newDevice; // Обновляем текущий тип устройства
-      const newSlidesPerView = getSlidesPerView(newDevice); // Получаем новое количество слайдов
+      currentDevice = newDevice; 
+      const newSlidesPerView = getSlidesPerView(newDevice); 
 
-      swiper.params.slidesPerView = newSlidesPerView; // Обновляем параметры Swiper
-      swiper.update(); // Пересчитываем и применяем новые параметры
+      swiper.params.slidesPerView = newSlidesPerView; 
+      swiper.update(); 
     }
   });
 }
 
-// Функция для определения текущего устройства
 function getCurrentDevice() {
   if (window.matchMedia('(min-width: 1440px)').matches) {
     return 'desktop';
@@ -42,7 +40,6 @@ function getCurrentDevice() {
   }
 }
 
-// Функция для получения количества слайдов в зависимости от устройства
 function getSlidesPerView(device) {
   switch (device) {
     case 'desktop':
@@ -60,7 +57,7 @@ function getSpace(device) {
     case 'desktop':
       return 30; 
     case 'tablet':
-      return 17;
+      return 18;
     case 'mobile':
     default:
       return 15;

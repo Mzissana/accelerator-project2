@@ -5,7 +5,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 function initAdvantagesSwiper() {
-  const desktopBreakpoint = 1440; // Минимальная ширина для активации Swiper
+  const desktopBreakpoint = 1440; 
   let swiperInstance = null;
 
   function enableSwiper() {
@@ -16,12 +16,12 @@ function initAdvantagesSwiper() {
         slidesPerGroup: 1,
         spaceBetween: 30,
         centeredSlides: true,
-        initialSlide: 0,
+        initialSlide: 2,
         loop: true,
         loopAddBlankSlides: false,
         navigation: {
-          nextEl: ".advantages-swiper__button--next",
-          prevEl: ".advantages-swiper__button--prev",
+          nextEl: ".advantages-swiper-container__button--next",
+          prevEl: ".advantages-swiper-container__button--prev",
         },
         simulateTouch: true,
       });

@@ -1,4 +1,4 @@
-.advantages .advantages-swiper__buttons {
+.advantages .advantages-swiper-container__buttons {
   display: none;
 
   @media (min-width: $desktop-width) {
@@ -16,7 +16,7 @@
   
 }
 
-.advantages .advantages-swiper__button {
+.advantages .advantages-swiper-container__button {
   background-color: #0266c1;
   color: #FFFFFF;
   width: 37px;
@@ -42,7 +42,7 @@
 
 }
 
-.advantages .advantages-swiper__button--next {
+.advantages .advantages-swiper-container__button--next {
   width: 37px;
   height: 35px;
   position: relative;
@@ -62,7 +62,7 @@
 
 
 
-.advantages .advantages-swiper__button--prev {
+.advantages .advantages-swiper-container__button--prev {
   width: 37px;
   height: 35px;
   position: relative;
@@ -80,13 +80,13 @@
 }
 
 
-.advantages .advantages-swiper__button:hover {
+.advantages .advantages-swiper-container__button:hover {
   &::after {
     background-color: #1c3374;
   }
 }
 
-.advantages .advantages-swiper__button:focus {
+.advantages .advantages-swiper-container__button:focus {
   &::after {
     background-color: #1c3374;
   }

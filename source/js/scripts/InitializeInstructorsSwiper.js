@@ -14,17 +14,17 @@ function initInstructorsSwiper() {
     swiper = new Swiper('.instructors-swiper', {
       modules: [Navigation, Pagination],
       slidesPerView: getSlidesPerView(currentDevice),
+      initialSlide: getFirstSlide(currentDevice),
       spaceBetween: 20,
       loop: false,
       navigation: {
-        nextEl: ".training-swiper__button--next",
-        prevEl: ".training-swiper__button--prev",
+        nextEl: ".training-swiper-container__button--next",
+        prevEl: ".training-swiper-container__button--prev",
       },
       simulateTouch: currentDevice !== 'desktop',
     });
   }
 
-  // Обновляем Swiper при изменении размера экрана
   window.addEventListener('resize', () => {
     const newDevice = getCurrentDevice();
     if (newDevice !== currentDevice) {
@@ -36,7 +36,6 @@ function initInstructorsSwiper() {
   initializeSwiper();
 }
 
-// Определение текущего устройства
 function getCurrentDevice() {
   if (window.matchMedia('(min-width: 1440px)').matches) {
     return 'desktop';
@@ -47,7 +46,6 @@ function getCurrentDevice() {
   }
 }
 
-// Определение количества слайдов
 function getSlidesPerView(device) {
   switch (device) {
     case 'desktop':
@@ -60,16 +58,15 @@ function getSlidesPerView(device) {
   }
 }
 
-// Установка первого слайда
 function getFirstSlide(device) {
   switch (device) {
     case 'desktop':
-      return 4;
+      return 0;
     case 'tablet':
-      return 3; // Устанавливаем 3-й слайд как начальный на планшете
+      return 0; 
     case 'mobile':
     default:
-      return 0;
+      return 2;
   }
 }
 

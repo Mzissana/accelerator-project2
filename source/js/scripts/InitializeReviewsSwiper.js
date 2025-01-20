@@ -14,8 +14,8 @@ function initReviewsSwiper() {
     centeredSlides: false,
     loop: false,
     navigation: {
-      nextEl: ".reviews-swiper__button--next",
-      prevEl: ".reviews-swiper__button--prev",
+      nextEl: ".reviews-swiper-container__button--next",
+      prevEl: ".reviews-swiper-container__button--prev",
     },
     simulateTouch: true,
     

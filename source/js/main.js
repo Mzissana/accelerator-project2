@@ -8,7 +8,7 @@ import initReviewsSwiper from './scripts/InitializeReviewsSwiper';
 import initToursSwiper from './scripts/InitializeToursSwiper';
 import initInstructorsSwiper from './scripts/InitializeInstructorsSwiper';
 import initMenu from './scripts/InitializeMenu';
-
+import addDuplicateHeadings from './scripts/DuplicateHeadings.js';
 
 
 //form 
@@ -37,3 +37,5 @@ document.addEventListener('DOMContentLoaded', initInstructorsSwiper);
 
 document.addEventListener('DOMContentLoaded', initMenu);
 
+//headings
+document.addEventListener('DOMContentLoaded', addDuplicateHeadings)

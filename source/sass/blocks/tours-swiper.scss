@@ -41,7 +41,7 @@
 }
 
 
-.tours .tours-swiper__buttons {
+.tours .tours-swiper-container__buttons {
   display: none;
 
   @media (min-width: $tablet-width) {
@@ -72,7 +72,7 @@
   
 }
 
-.tours .tours-swiper__button {
+.tours .tours-swiper-container__button {
   background-color: #0266c1;
   color: #FFFFFF;
   width: 37px;
@@ -102,7 +102,7 @@
 }
 
 
-.tours .tours-swiper__button--next {
+.tours .tours-swiper-container__button--next {
   width: 37px;
   height: 35px;
   position: relative;
@@ -122,7 +122,7 @@
 
 
 
-.tours .tours-swiper__button--prev {
+.tours .tours-swiper-container__button--prev {
   width: 37px;
   height: 35px;
   position: relative;
@@ -140,13 +140,13 @@
 }
 
 
-.tours .tours-swiper__button:hover {
+.tours .tours-swiper-container__button:hover {
   &::after {
     background-color: #1c3374;
   }
 }
 
-.tours .tours-swiper__button:focus {
+.tours .tours-swiper-container__button:focus {
   &::after {
     background-color: #1c3374;
   }

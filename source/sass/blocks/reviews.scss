@@ -44,7 +44,7 @@
   position: relative;
 }
 
-.reviews .reviews-swiper__buttons {
+.reviews .reviews-swiper-container__buttons {
   display: none;
 
   @media (min-width: $tablet-width) {
@@ -60,7 +60,7 @@
   
 }
 
-.reviews .reviews-swiper__button {
+.reviews .reviews-swiper-container__button {
   background-color: #0266c1;
   color: #FFFFFF;
   width: 37px;
@@ -85,7 +85,7 @@
   }
 }
 
-.reviews .reviews-swiper__button--next {
+.reviews .reviews-swiper-container__button--next {
   width: 37px;
   height: 35px;
   position: relative;
@@ -105,7 +105,7 @@
 
 
 
-.reviews .reviews-swiper__button--prev {
+.reviews .reviews-swiper-container__button--prev {
   width: 37px;
   height: 35px;
   position: relative;
@@ -123,13 +123,13 @@
 }
 
 
-.reviews .reviews-swiper__button:hover {
+.reviews .reviews-swiper-container__button:hover {
   &::after {
     background-color: #1c3374;
   }
 }
 
-.reviews .reviews-swiper__button:focus {
+.reviews .reviews-swiper-container__button:focus {
   &::after {
     background-color: #1c3374;
   }

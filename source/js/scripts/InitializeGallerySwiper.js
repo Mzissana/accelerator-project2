@@ -12,8 +12,8 @@ function initGallerySwiper() {
     spaceBetween: getSpace(currentDevice),
     loop: true,
     navigation: {
-      nextEl: ".gallery-swiper__button--next",
-      prevEl: ".gallery-swiper__button--prev",
+      nextEl: ".gallery-swiper-container__button--next",
+      prevEl: ".gallery-swiper-container__button--prev",
     },
     autoplay: {
       delay: 3000,
@@ -23,22 +23,20 @@ function initGallerySwiper() {
     
   });
 
-  // Функция для обновления Swiper при изменении размера экрана
   window.addEventListener('resize', () => {
-    const newDevice = getCurrentDevice(); // Получаем новое устройство при изменении экрана
+    const newDevice = getCurrentDevice(); 
     if (newDevice !== currentDevice) {
-      currentDevice = newDevice; // Обновляем текущий тип устройства
-      const newSlidesPerView = getSlidesPerView(newDevice); // Получаем новое количество слайдов
+      currentDevice = newDevice; 
+      const newSlidesPerView = getSlidesPerView(newDevice); 
       const newSpaceBetween = getSpace(newDevice);
       swiper.params.spaceBetween = newSpaceBetween;
-      swiper.params.slidesPerView = newSlidesPerView; // Обновляем параметры Swiper
-      swiper.params.simulateTouch = newDevice !== 'desktop'; // Обновляем simulateTouch
-      swiper.update(); // Пересчитываем и применяем новые параметры
+      swiper.params.slidesPerView = newSlidesPerView; 
+      swiper.params.simulateTouch = newDevice !== 'desktop';
+      swiper.update(); 
     }
   });
 }
 
-// Функция для определения текущего устройства
 function getCurrentDevice() {
   if (window.matchMedia('(min-width: 1440px)').matches) {
     return 'desktop';
@@ -49,7 +47,6 @@ function getCurrentDevice() {
   }
 }
 
-// Функция для получения количества слайдов в зависимости от устройства
 function getSlidesPerView(device) {
   switch (device) {
     case 'desktop':

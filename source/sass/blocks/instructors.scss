@@ -23,7 +23,7 @@
   position: relative;
 }
 
-.instructors .training-swiper__buttons {
+.instructors .training-swiper-container__buttons {
   display: none;
 
   @media (min-width: $tablet-width) {
@@ -42,7 +42,7 @@
   } 
 }
 
-.instructors .training-swiper__button {
+.instructors .training-swiper-container__button {
   background-color: #0266c1;
   color: #FFFFFF;
   width: 37px;
@@ -69,7 +69,7 @@
   
 }
 
-.instructors .training-swiper__button--next {
+.instructors .training-swiper-container__button--next {
   width: 37px;
   height: 35px;
   position: relative;
@@ -89,7 +89,7 @@
 
 
 
-.instructors .training-swiper__button--prev {
+.instructors .training-swiper-container__button--prev {
   width: 37px;
   height: 35px;
   position: relative;
@@ -106,13 +106,13 @@
   }
 }
 
-.instructors .training-swiper__button:hover {
+.instructors .training-swiper-container__button:hover {
   &::after {
     background-color: #1c3374;
   }
 }
 
-.instructors .training-swiper__button:focus {
+.instructors .training-swiper-container__button:focus {
   &::after {
     background-color: #1c3374;
   }
